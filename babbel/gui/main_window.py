@@ -1,9 +1,9 @@
 from __future__ import annotations
 from PyQt6.QtWidgets import QMainWindow, QWidget, QHBoxLayout, QVBoxLayout, QPushButton, QLabel, QSpacerItem, QSizePolicy
 from PyQt6.QtCore import Qt
-from babbel.core.session_state import SessionState
-from babbel.core.session_controller import SessionController
-from babbel.core.conversations import ConversationStore
+from babbel.session_state import SessionState
+from babbel.session_controller import SessionController
+from babbel.conversations import ConversationStore
 from babbel.gui.chat_view import ChatView
 from babbel.gui.sidebar import Sidebar
 

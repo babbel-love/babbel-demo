@@ -33,5 +33,222 @@
     "intent": "explore",
     "user_input": "I'm so happy to finally get here",
     "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:51:48.936938+00:00",
+    "emotion": "fear",
+    "intent": "explore",
+    "user_input": "I feel anxious and want one step.",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:52:20.418077+00:00",
+    "emotion": "fear",
+    "intent": "explore",
+    "user_input": "I feel anxious and want one step.",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:52:20.421572+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Give me one tiny next step to start writing again.",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\n• Talk it out: Say it aloud once; notice what shifts.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:52:20.422588+00:00",
+    "emotion": "fear",
+    "intent": "seek guidance",
+    "user_input": "I'm a bit anxious. What should I do?",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want a next step, not a lecture.\n• Obstacle‑first: Name the blocker; write one workaround; do only that.\n• Two‑option test: List 2 options with 1 tradeoff each; pick one for a 10‑minute test.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:52:51.697717+00:00",
+    "emotion": "fear",
+    "intent": "explore",
+    "user_input": "I feel anxious and want one step.",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:52:51.701410+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Give me one tiny next step to start writing again.",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\n• Talk it out: Say it aloud once; notice what shifts.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:52:51.702526+00:00",
+    "emotion": "fear",
+    "intent": "seek guidance",
+    "user_input": "I'm a bit anxious. What should I do?",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want a next step, not a lecture.\n• Obstacle‑first: Name the blocker; write one workaround; do only that.\n• Two‑option test: List 2 options with 1 tradeoff each; pick one for a 10‑minute test.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:53:15.959450+00:00",
+    "emotion": "fear",
+    "intent": "explore",
+    "user_input": "I feel anxious and want one step.",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:53:15.963127+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Give me one tiny next step to start writing again.",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\n• Talk it out: Say it aloud once; notice what shifts.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:53:15.964124+00:00",
+    "emotion": "fear",
+    "intent": "seek guidance",
+    "user_input": "I'm a bit anxious. What should I do?",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want a next step, not a lecture.\n• Obstacle‑first: Name the blocker; write one workaround; do only that.\n• Two‑option test: List 2 options with 1 tradeoff each; pick one for a 10‑minute test.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:55:05.647578+00:00",
+    "emotion": "fear",
+    "intent": "explore",
+    "user_input": "I feel anxious and want one step.",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:55:05.656616+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Give me one tiny next step to start writing again.",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\n• Talk it out: Say it aloud once; notice what shifts.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:55:05.657684+00:00",
+    "emotion": "fear",
+    "intent": "seek guidance",
+    "user_input": "I'm a bit anxious. What should I do?",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want a next step, not a lecture.\n• Obstacle‑first: Name the blocker; write one workaround; do only that.\n• Two‑option test: List 2 options with 1 tradeoff each; pick one for a 10‑minute test.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:55:23.228043+00:00",
+    "emotion": "fear",
+    "intent": "explore",
+    "user_input": "I feel anxious and want one step.",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:55:23.237394+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Give me one tiny next step to start writing again.",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\n• Talk it out: Say it aloud once; notice what shifts.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:55:23.238460+00:00",
+    "emotion": "fear",
+    "intent": "seek guidance",
+    "user_input": "I'm a bit anxious. What should I do?",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want a next step, not a lecture.\n• Obstacle‑first: Name the blocker; write one workaround; do only that.\n• Two‑option test: List 2 options with 1 tradeoff each; pick one for a 10‑minute test.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:57:07.893495+00:00",
+    "emotion": "fear",
+    "intent": "explore",
+    "user_input": "I feel anxious and want one step.",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:57:07.897631+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Give me one tiny next step to start writing again.",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\n• Talk it out: Say it aloud once; notice what shifts.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:57:07.898839+00:00",
+    "emotion": "fear",
+    "intent": "seek guidance",
+    "user_input": "I'm a bit anxious. What should I do?",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want a next step, not a lecture.\n• Obstacle‑first: Name the blocker; write one workaround; do only that.\n• Two‑option test: List 2 options with 1 tradeoff each; pick one for a 10‑minute test.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:59:08.653009+00:00",
+    "emotion": "fear",
+    "intent": "explore",
+    "user_input": "I feel anxious and want one step.",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:59:08.657010+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Give me one tiny next step to start writing again.",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\n• Talk it out: Say it aloud once; notice what shifts.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T07:59:08.658088+00:00",
+    "emotion": "fear",
+    "intent": "seek guidance",
+    "user_input": "I'm a bit anxious. What should I do?",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want a next step, not a lecture.\n• Obstacle‑first: Name the blocker; write one workaround; do only that.\n• Two‑option test: List 2 options with 1 tradeoff each; pick one for a 10‑minute test.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T08:01:03.903699+00:00",
+    "emotion": "fear",
+    "intent": "explore",
+    "user_input": "I feel anxious and want one step.",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T08:01:03.907662+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Give me one tiny next step to start writing again.",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\n• Talk it out: Say it aloud once; notice what shifts.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T08:01:03.908776+00:00",
+    "emotion": "fear",
+    "intent": "seek guidance",
+    "user_input": "I'm a bit anxious. What should I do?",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want a next step, not a lecture.\n• Obstacle‑first: Name the blocker; write one workaround; do only that.\n• Two‑option test: List 2 options with 1 tradeoff each; pick one for a 10‑minute test.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T08:01:41.979879+00:00",
+    "emotion": "fear",
+    "intent": "explore",
+    "user_input": "I feel anxious and want one step.",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T08:01:41.983935+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Give me one tiny next step to start writing again.",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\n• Talk it out: Say it aloud once; notice what shifts.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T08:01:41.985144+00:00",
+    "emotion": "fear",
+    "intent": "seek guidance",
+    "user_input": "I'm a bit anxious. What should I do?",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want a next step, not a lecture.\n• Obstacle‑first: Name the blocker; write one workaround; do only that.\n• Two‑option test: List 2 options with 1 tradeoff each; pick one for a 10‑minute test.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T08:04:00.020761+00:00",
+    "emotion": "fear",
+    "intent": "explore",
+    "user_input": "I feel anxious and want one step.",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T08:04:00.025137+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Give me one tiny next step to start writing again.",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\n• Talk it out: Say it aloud once; notice what shifts.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T08:04:00.026382+00:00",
+    "emotion": "fear",
+    "intent": "seek guidance",
+    "user_input": "I'm a bit anxious. What should I do?",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want a next step, not a lecture.\n• Obstacle‑first: Name the blocker; write one workaround; do only that.\n• Two‑option test: List 2 options with 1 tradeoff each; pick one for a 10‑minute test.\nWhich option feels 10‑minute doable right now?"
   }
 ]

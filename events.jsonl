@@ -48,3 +48,344 @@
 {"trace_id": "afb074d5e3eb4cfda2a1d652fc0279b2", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
 {"trace_id": "afb074d5e3eb4cfda2a1d652fc0279b2", "step": "memory_log", "elapsed_ms": 0}
 {"trace_id": "afb074d5e3eb4cfda2a1d652fc0279b2", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "76c55020a789408786dce9ccc07909b2", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "explore"}}
+{"trace_id": "76c55020a789408786dce9ccc07909b2", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "76c55020a789408786dce9ccc07909b2", "step": "context", "elapsed_ms": 0, "count": 5}
+{"trace_id": "76c55020a789408786dce9ccc07909b2", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "76c55020a789408786dce9ccc07909b2", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "76c55020a789408786dce9ccc07909b2", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "76c55020a789408786dce9ccc07909b2", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "76c55020a789408786dce9ccc07909b2", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "76c55020a789408786dce9ccc07909b2", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "76c55020a789408786dce9ccc07909b2", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "76c55020a789408786dce9ccc07909b2", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "07aff8963c3c4d7585560edd169572d1", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "explore"}}
+{"trace_id": "07aff8963c3c4d7585560edd169572d1", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "07aff8963c3c4d7585560edd169572d1", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "07aff8963c3c4d7585560edd169572d1", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "07aff8963c3c4d7585560edd169572d1", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "07aff8963c3c4d7585560edd169572d1", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "07aff8963c3c4d7585560edd169572d1", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "07aff8963c3c4d7585560edd169572d1", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "07aff8963c3c4d7585560edd169572d1", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "07aff8963c3c4d7585560edd169572d1", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "07aff8963c3c4d7585560edd169572d1", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "6431692cd4c74919bfed9dd69d8c1e66", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "6431692cd4c74919bfed9dd69d8c1e66", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "6431692cd4c74919bfed9dd69d8c1e66", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "6431692cd4c74919bfed9dd69d8c1e66", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "6431692cd4c74919bfed9dd69d8c1e66", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "6431692cd4c74919bfed9dd69d8c1e66", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "6431692cd4c74919bfed9dd69d8c1e66", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "6431692cd4c74919bfed9dd69d8c1e66", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "6431692cd4c74919bfed9dd69d8c1e66", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "6431692cd4c74919bfed9dd69d8c1e66", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "6431692cd4c74919bfed9dd69d8c1e66", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "3456e6cae9674b31b681acbc2072ad27", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "seek guidance"}}
+{"trace_id": "3456e6cae9674b31b681acbc2072ad27", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "3456e6cae9674b31b681acbc2072ad27", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "3456e6cae9674b31b681acbc2072ad27", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "3456e6cae9674b31b681acbc2072ad27", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "3456e6cae9674b31b681acbc2072ad27", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "3456e6cae9674b31b681acbc2072ad27", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "3456e6cae9674b31b681acbc2072ad27", "step": "node_rules", "elapsed_ms": 0, "line": "Safety-first pacing."}
+{"trace_id": "3456e6cae9674b31b681acbc2072ad27", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "3456e6cae9674b31b681acbc2072ad27", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "3456e6cae9674b31b681acbc2072ad27", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "510ed0327e2f4173b78ca38b6946a7d0", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "explore"}}
+{"trace_id": "510ed0327e2f4173b78ca38b6946a7d0", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "510ed0327e2f4173b78ca38b6946a7d0", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "510ed0327e2f4173b78ca38b6946a7d0", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "510ed0327e2f4173b78ca38b6946a7d0", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "510ed0327e2f4173b78ca38b6946a7d0", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "510ed0327e2f4173b78ca38b6946a7d0", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "510ed0327e2f4173b78ca38b6946a7d0", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "510ed0327e2f4173b78ca38b6946a7d0", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "510ed0327e2f4173b78ca38b6946a7d0", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "510ed0327e2f4173b78ca38b6946a7d0", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "654ee1dcd98e46ea8c09190f2793090f", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "654ee1dcd98e46ea8c09190f2793090f", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "654ee1dcd98e46ea8c09190f2793090f", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "654ee1dcd98e46ea8c09190f2793090f", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "654ee1dcd98e46ea8c09190f2793090f", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "654ee1dcd98e46ea8c09190f2793090f", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "654ee1dcd98e46ea8c09190f2793090f", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "654ee1dcd98e46ea8c09190f2793090f", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "654ee1dcd98e46ea8c09190f2793090f", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "654ee1dcd98e46ea8c09190f2793090f", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "654ee1dcd98e46ea8c09190f2793090f", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "dba1e55175c5496db598e95cc8b75604", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "seek guidance"}}
+{"trace_id": "dba1e55175c5496db598e95cc8b75604", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "dba1e55175c5496db598e95cc8b75604", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "dba1e55175c5496db598e95cc8b75604", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "dba1e55175c5496db598e95cc8b75604", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "dba1e55175c5496db598e95cc8b75604", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "dba1e55175c5496db598e95cc8b75604", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "dba1e55175c5496db598e95cc8b75604", "step": "node_rules", "elapsed_ms": 0, "line": "Safety-first pacing."}
+{"trace_id": "dba1e55175c5496db598e95cc8b75604", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "dba1e55175c5496db598e95cc8b75604", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "dba1e55175c5496db598e95cc8b75604", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "3595280e67ad4cb1b166ff27b318de8a", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "explore"}}
+{"trace_id": "3595280e67ad4cb1b166ff27b318de8a", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "3595280e67ad4cb1b166ff27b318de8a", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "3595280e67ad4cb1b166ff27b318de8a", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "3595280e67ad4cb1b166ff27b318de8a", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "3595280e67ad4cb1b166ff27b318de8a", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "3595280e67ad4cb1b166ff27b318de8a", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "3595280e67ad4cb1b166ff27b318de8a", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "3595280e67ad4cb1b166ff27b318de8a", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "3595280e67ad4cb1b166ff27b318de8a", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "3595280e67ad4cb1b166ff27b318de8a", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "982485ac87a544a4a8c9e3ad6351994a", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "982485ac87a544a4a8c9e3ad6351994a", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "982485ac87a544a4a8c9e3ad6351994a", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "982485ac87a544a4a8c9e3ad6351994a", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "982485ac87a544a4a8c9e3ad6351994a", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "982485ac87a544a4a8c9e3ad6351994a", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "982485ac87a544a4a8c9e3ad6351994a", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "982485ac87a544a4a8c9e3ad6351994a", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "982485ac87a544a4a8c9e3ad6351994a", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "982485ac87a544a4a8c9e3ad6351994a", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "982485ac87a544a4a8c9e3ad6351994a", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "d8603a57a0624af28704643e2a20d111", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "seek guidance"}}
+{"trace_id": "d8603a57a0624af28704643e2a20d111", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "d8603a57a0624af28704643e2a20d111", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "d8603a57a0624af28704643e2a20d111", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "d8603a57a0624af28704643e2a20d111", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "d8603a57a0624af28704643e2a20d111", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "d8603a57a0624af28704643e2a20d111", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "d8603a57a0624af28704643e2a20d111", "step": "node_rules", "elapsed_ms": 0, "line": "Safety-first pacing."}
+{"trace_id": "d8603a57a0624af28704643e2a20d111", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "d8603a57a0624af28704643e2a20d111", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "d8603a57a0624af28704643e2a20d111", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "2b8eff92e75a470bbee0c87218d527e4", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "explore"}}
+{"trace_id": "2b8eff92e75a470bbee0c87218d527e4", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "2b8eff92e75a470bbee0c87218d527e4", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "2b8eff92e75a470bbee0c87218d527e4", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "2b8eff92e75a470bbee0c87218d527e4", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "2b8eff92e75a470bbee0c87218d527e4", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "2b8eff92e75a470bbee0c87218d527e4", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "2b8eff92e75a470bbee0c87218d527e4", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "2b8eff92e75a470bbee0c87218d527e4", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "2b8eff92e75a470bbee0c87218d527e4", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "2b8eff92e75a470bbee0c87218d527e4", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "73e3f4c847804f30b2e87e13ef8747c1", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "73e3f4c847804f30b2e87e13ef8747c1", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "73e3f4c847804f30b2e87e13ef8747c1", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "73e3f4c847804f30b2e87e13ef8747c1", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "73e3f4c847804f30b2e87e13ef8747c1", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "73e3f4c847804f30b2e87e13ef8747c1", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "73e3f4c847804f30b2e87e13ef8747c1", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "73e3f4c847804f30b2e87e13ef8747c1", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "73e3f4c847804f30b2e87e13ef8747c1", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "73e3f4c847804f30b2e87e13ef8747c1", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "73e3f4c847804f30b2e87e13ef8747c1", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "f07202e652e44b81839cca7ed406a001", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "seek guidance"}}
+{"trace_id": "f07202e652e44b81839cca7ed406a001", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "f07202e652e44b81839cca7ed406a001", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "f07202e652e44b81839cca7ed406a001", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "f07202e652e44b81839cca7ed406a001", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "f07202e652e44b81839cca7ed406a001", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "f07202e652e44b81839cca7ed406a001", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "f07202e652e44b81839cca7ed406a001", "step": "node_rules", "elapsed_ms": 0, "line": "Safety-first pacing."}
+{"trace_id": "f07202e652e44b81839cca7ed406a001", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "f07202e652e44b81839cca7ed406a001", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "f07202e652e44b81839cca7ed406a001", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "9d639c91d0424316a0c0f2fbb41a58a7", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "explore"}}
+{"trace_id": "9d639c91d0424316a0c0f2fbb41a58a7", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "9d639c91d0424316a0c0f2fbb41a58a7", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "9d639c91d0424316a0c0f2fbb41a58a7", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "9d639c91d0424316a0c0f2fbb41a58a7", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "9d639c91d0424316a0c0f2fbb41a58a7", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "9d639c91d0424316a0c0f2fbb41a58a7", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "9d639c91d0424316a0c0f2fbb41a58a7", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "9d639c91d0424316a0c0f2fbb41a58a7", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "9d639c91d0424316a0c0f2fbb41a58a7", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "9d639c91d0424316a0c0f2fbb41a58a7", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "ddf31787bbc24f1f9709f054a36089fe", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "ddf31787bbc24f1f9709f054a36089fe", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "ddf31787bbc24f1f9709f054a36089fe", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "ddf31787bbc24f1f9709f054a36089fe", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "ddf31787bbc24f1f9709f054a36089fe", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "ddf31787bbc24f1f9709f054a36089fe", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "ddf31787bbc24f1f9709f054a36089fe", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "ddf31787bbc24f1f9709f054a36089fe", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "ddf31787bbc24f1f9709f054a36089fe", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "ddf31787bbc24f1f9709f054a36089fe", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "ddf31787bbc24f1f9709f054a36089fe", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "68f6bf96ca0c41b0a3647b010e2d03d6", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "seek guidance"}}
+{"trace_id": "68f6bf96ca0c41b0a3647b010e2d03d6", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "68f6bf96ca0c41b0a3647b010e2d03d6", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "68f6bf96ca0c41b0a3647b010e2d03d6", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "68f6bf96ca0c41b0a3647b010e2d03d6", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "68f6bf96ca0c41b0a3647b010e2d03d6", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "68f6bf96ca0c41b0a3647b010e2d03d6", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "68f6bf96ca0c41b0a3647b010e2d03d6", "step": "node_rules", "elapsed_ms": 0, "line": "Safety-first pacing."}
+{"trace_id": "68f6bf96ca0c41b0a3647b010e2d03d6", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "68f6bf96ca0c41b0a3647b010e2d03d6", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "68f6bf96ca0c41b0a3647b010e2d03d6", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "042cfe414bf440bba9ed20e17cd9962a", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "explore"}}
+{"trace_id": "042cfe414bf440bba9ed20e17cd9962a", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "042cfe414bf440bba9ed20e17cd9962a", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "042cfe414bf440bba9ed20e17cd9962a", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "042cfe414bf440bba9ed20e17cd9962a", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "042cfe414bf440bba9ed20e17cd9962a", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "042cfe414bf440bba9ed20e17cd9962a", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "042cfe414bf440bba9ed20e17cd9962a", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "042cfe414bf440bba9ed20e17cd9962a", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "042cfe414bf440bba9ed20e17cd9962a", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "042cfe414bf440bba9ed20e17cd9962a", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "5bcc93951cf1476ca5ec24c377483bc6", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "5bcc93951cf1476ca5ec24c377483bc6", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "5bcc93951cf1476ca5ec24c377483bc6", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "5bcc93951cf1476ca5ec24c377483bc6", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "5bcc93951cf1476ca5ec24c377483bc6", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "5bcc93951cf1476ca5ec24c377483bc6", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "5bcc93951cf1476ca5ec24c377483bc6", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "5bcc93951cf1476ca5ec24c377483bc6", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "5bcc93951cf1476ca5ec24c377483bc6", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "5bcc93951cf1476ca5ec24c377483bc6", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "5bcc93951cf1476ca5ec24c377483bc6", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "96d62b70543b416ab3ac40f1fb52da3c", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "seek guidance"}}
+{"trace_id": "96d62b70543b416ab3ac40f1fb52da3c", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "96d62b70543b416ab3ac40f1fb52da3c", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "96d62b70543b416ab3ac40f1fb52da3c", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "96d62b70543b416ab3ac40f1fb52da3c", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "96d62b70543b416ab3ac40f1fb52da3c", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "96d62b70543b416ab3ac40f1fb52da3c", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "96d62b70543b416ab3ac40f1fb52da3c", "step": "node_rules", "elapsed_ms": 0, "line": "Safety-first pacing."}
+{"trace_id": "96d62b70543b416ab3ac40f1fb52da3c", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "96d62b70543b416ab3ac40f1fb52da3c", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "96d62b70543b416ab3ac40f1fb52da3c", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "66cb2aa2f33247dd9327b67c1342472f", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "explore"}}
+{"trace_id": "66cb2aa2f33247dd9327b67c1342472f", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "66cb2aa2f33247dd9327b67c1342472f", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "66cb2aa2f33247dd9327b67c1342472f", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "66cb2aa2f33247dd9327b67c1342472f", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "66cb2aa2f33247dd9327b67c1342472f", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "66cb2aa2f33247dd9327b67c1342472f", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "66cb2aa2f33247dd9327b67c1342472f", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "66cb2aa2f33247dd9327b67c1342472f", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "66cb2aa2f33247dd9327b67c1342472f", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "66cb2aa2f33247dd9327b67c1342472f", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "a40e875336404f7a96addfc7b9dc6ce7", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "a40e875336404f7a96addfc7b9dc6ce7", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "a40e875336404f7a96addfc7b9dc6ce7", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "a40e875336404f7a96addfc7b9dc6ce7", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "a40e875336404f7a96addfc7b9dc6ce7", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "a40e875336404f7a96addfc7b9dc6ce7", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "a40e875336404f7a96addfc7b9dc6ce7", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "a40e875336404f7a96addfc7b9dc6ce7", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "a40e875336404f7a96addfc7b9dc6ce7", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "a40e875336404f7a96addfc7b9dc6ce7", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "a40e875336404f7a96addfc7b9dc6ce7", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "b1c3f71cd3094d4dbb1ea32c891b31c2", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "seek guidance"}}
+{"trace_id": "b1c3f71cd3094d4dbb1ea32c891b31c2", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "b1c3f71cd3094d4dbb1ea32c891b31c2", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "b1c3f71cd3094d4dbb1ea32c891b31c2", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "b1c3f71cd3094d4dbb1ea32c891b31c2", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "b1c3f71cd3094d4dbb1ea32c891b31c2", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "b1c3f71cd3094d4dbb1ea32c891b31c2", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "b1c3f71cd3094d4dbb1ea32c891b31c2", "step": "node_rules", "elapsed_ms": 0, "line": "Safety-first pacing."}
+{"trace_id": "b1c3f71cd3094d4dbb1ea32c891b31c2", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "b1c3f71cd3094d4dbb1ea32c891b31c2", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "b1c3f71cd3094d4dbb1ea32c891b31c2", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "cb8b2032fd174029a686da0df7f46790", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "explore"}}
+{"trace_id": "cb8b2032fd174029a686da0df7f46790", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "cb8b2032fd174029a686da0df7f46790", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "cb8b2032fd174029a686da0df7f46790", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "cb8b2032fd174029a686da0df7f46790", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "cb8b2032fd174029a686da0df7f46790", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "cb8b2032fd174029a686da0df7f46790", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "cb8b2032fd174029a686da0df7f46790", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "cb8b2032fd174029a686da0df7f46790", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "cb8b2032fd174029a686da0df7f46790", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "cb8b2032fd174029a686da0df7f46790", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "52715d539f354f4c8796be074bbd3c8f", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "52715d539f354f4c8796be074bbd3c8f", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "52715d539f354f4c8796be074bbd3c8f", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "52715d539f354f4c8796be074bbd3c8f", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "52715d539f354f4c8796be074bbd3c8f", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "52715d539f354f4c8796be074bbd3c8f", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "52715d539f354f4c8796be074bbd3c8f", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "52715d539f354f4c8796be074bbd3c8f", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "52715d539f354f4c8796be074bbd3c8f", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "52715d539f354f4c8796be074bbd3c8f", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "52715d539f354f4c8796be074bbd3c8f", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "0ad70b50c08d42ff8267958c7ccd0ced", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "seek guidance"}}
+{"trace_id": "0ad70b50c08d42ff8267958c7ccd0ced", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "0ad70b50c08d42ff8267958c7ccd0ced", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "0ad70b50c08d42ff8267958c7ccd0ced", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "0ad70b50c08d42ff8267958c7ccd0ced", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "0ad70b50c08d42ff8267958c7ccd0ced", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "0ad70b50c08d42ff8267958c7ccd0ced", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "0ad70b50c08d42ff8267958c7ccd0ced", "step": "node_rules", "elapsed_ms": 0, "line": "Safety-first pacing."}
+{"trace_id": "0ad70b50c08d42ff8267958c7ccd0ced", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "0ad70b50c08d42ff8267958c7ccd0ced", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "0ad70b50c08d42ff8267958c7ccd0ced", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "853f234d496a4a90a1f5cf42aa4c6432", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "explore"}}
+{"trace_id": "853f234d496a4a90a1f5cf42aa4c6432", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "853f234d496a4a90a1f5cf42aa4c6432", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "853f234d496a4a90a1f5cf42aa4c6432", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "853f234d496a4a90a1f5cf42aa4c6432", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "853f234d496a4a90a1f5cf42aa4c6432", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "853f234d496a4a90a1f5cf42aa4c6432", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "853f234d496a4a90a1f5cf42aa4c6432", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "853f234d496a4a90a1f5cf42aa4c6432", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "853f234d496a4a90a1f5cf42aa4c6432", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "853f234d496a4a90a1f5cf42aa4c6432", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "04746130de4e4d2986d22c373bb59477", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "04746130de4e4d2986d22c373bb59477", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "04746130de4e4d2986d22c373bb59477", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "04746130de4e4d2986d22c373bb59477", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "04746130de4e4d2986d22c373bb59477", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "04746130de4e4d2986d22c373bb59477", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "04746130de4e4d2986d22c373bb59477", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "04746130de4e4d2986d22c373bb59477", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "04746130de4e4d2986d22c373bb59477", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "04746130de4e4d2986d22c373bb59477", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "04746130de4e4d2986d22c373bb59477", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "276e3fc8713747d688ad3aa14d9d7958", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "seek guidance"}}
+{"trace_id": "276e3fc8713747d688ad3aa14d9d7958", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "276e3fc8713747d688ad3aa14d9d7958", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "276e3fc8713747d688ad3aa14d9d7958", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "276e3fc8713747d688ad3aa14d9d7958", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "276e3fc8713747d688ad3aa14d9d7958", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "276e3fc8713747d688ad3aa14d9d7958", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "276e3fc8713747d688ad3aa14d9d7958", "step": "node_rules", "elapsed_ms": 0, "line": "Safety-first pacing."}
+{"trace_id": "276e3fc8713747d688ad3aa14d9d7958", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "276e3fc8713747d688ad3aa14d9d7958", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "276e3fc8713747d688ad3aa14d9d7958", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "8a269961181141389da72f9450271f89", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "explore"}}
+{"trace_id": "8a269961181141389da72f9450271f89", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "8a269961181141389da72f9450271f89", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "8a269961181141389da72f9450271f89", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "8a269961181141389da72f9450271f89", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "8a269961181141389da72f9450271f89", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "8a269961181141389da72f9450271f89", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "8a269961181141389da72f9450271f89", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "8a269961181141389da72f9450271f89", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "8a269961181141389da72f9450271f89", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "8a269961181141389da72f9450271f89", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "f071d0d6531f488589934a326abf0525", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "f071d0d6531f488589934a326abf0525", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "f071d0d6531f488589934a326abf0525", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "f071d0d6531f488589934a326abf0525", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "f071d0d6531f488589934a326abf0525", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "f071d0d6531f488589934a326abf0525", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "f071d0d6531f488589934a326abf0525", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "f071d0d6531f488589934a326abf0525", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "f071d0d6531f488589934a326abf0525", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "f071d0d6531f488589934a326abf0525", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "f071d0d6531f488589934a326abf0525", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "d9b800c00055448c8c631ff30db59ac7", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "seek guidance"}}
+{"trace_id": "d9b800c00055448c8c631ff30db59ac7", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "d9b800c00055448c8c631ff30db59ac7", "step": "context", "elapsed_ms": 0, "count": 6}
+{"trace_id": "d9b800c00055448c8c631ff30db59ac7", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "d9b800c00055448c8c631ff30db59ac7", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "d9b800c00055448c8c631ff30db59ac7", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "d9b800c00055448c8c631ff30db59ac7", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "d9b800c00055448c8c631ff30db59ac7", "step": "node_rules", "elapsed_ms": 0, "line": "Safety-first pacing."}
+{"trace_id": "d9b800c00055448c8c631ff30db59ac7", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "d9b800c00055448c8c631ff30db59ac7", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "d9b800c00055448c8c631ff30db59ac7", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}

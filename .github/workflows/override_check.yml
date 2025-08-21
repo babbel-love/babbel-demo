@@ -1,0 +1,9 @@
+name: Override Integrity
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run override integrity scan
+        run: bash scripts/scan_override.sh

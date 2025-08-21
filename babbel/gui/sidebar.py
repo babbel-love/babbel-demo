@@ -3,7 +3,7 @@ from typing import Optional
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QPushButton, QListWidget, QListWidgetItem, QSizePolicy
 
-from babbel.core.conversations import ConversationStore
+from babbel.conversations import ConversationStore
 
 class Sidebar(QWidget):
     def __init__(self, parent=None):

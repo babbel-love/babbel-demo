@@ -1,27 +1,22 @@
-from setuptools import setup
-
-APP = ['main.py']
-DATA_FILES = []
-OPTIONS = {
-    'argv_emulation': True,
-    'packages': ['babbel_core'],
-    'includes': ['PyQt6'],
-    'iconfile': None,
-    'plist': {
-        'CFBundleName': 'Babbel',
-        'CFBundleDisplayName': 'Babbel',
-        'CFBundleIdentifier': 'com.babbel.app',
-        'CFBundleVersion': '1.0.0',
-        'CFBundleShortVersionString': '1.0.0',
-        'LSMinimumSystemVersion': '11.0',
-        'NSHighResolutionCapable': True,
-    },
-}
+from setuptools import setup, find_packages
 
 setup(
-    app=APP,
-    name='Babbel',
-    data_files=DATA_FILES,
-    options={'py2app': OPTIONS},
-    setup_requires=['py2app'],
+    name='babbel-core',
+    version='0.1.0',
+    packages=find_packages(),
+    install_requires=[
+        'openai',
+        'pytest',
+        'black',
+        'isort',
+        'PyQt6'
+    ],
+    entry_points={
+        'console_scripts': [
+            'babbel-run=babbel.core.engine:main'
+        ]
+    },
+    include_package_data=True,
+    zip_safe=False
 )
+

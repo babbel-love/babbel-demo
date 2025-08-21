@@ -3,8 +3,8 @@ from typing import Dict, Optional, List
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QScrollArea
 
-from babbel.core.session_state import SessionState
-from babbel.core.conversations import ConversationStore
+from babbel.session_state import SessionState
+from babbel.conversations import ConversationStore
 from .chat_bubbles import MessageBubble
 
 class ChatView(QWidget):

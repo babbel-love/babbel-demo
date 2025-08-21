@@ -1,6 +1,6 @@
 from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLineEdit, QPushButton, QScrollArea
 from PyQt6.QtCore import Qt
-from babbel_core.engine import BabbelEngine
+from babbel.engine import BabbelEngine
 from babbel_gui.widgets.chat_bubble import ChatBubble
 
 class MainWindow(QWidget):

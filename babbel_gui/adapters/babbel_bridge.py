@@ -3,7 +3,7 @@ from typing import Any, Dict
 
 def get_babbel_response(text: str) -> Dict[str, Any]:
     try:
-        from babbel_core.core.orchestrator import process_message
+        from babbel.orchestrator import process_message
         out = process_message(text)
     except Exception:
         return {

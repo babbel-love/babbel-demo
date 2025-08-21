@@ -1,0 +1,4 @@
+[alias]
+dev = git clone https://babbel-love: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@github.com/babbel-love/babbel-demo.git pull && source .venv/bin/activate && ./run_babbel.sh
+test = source ~/.zprofile .venv/bin/activate && ./run_tests.sh
+

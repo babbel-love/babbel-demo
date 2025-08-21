@@ -1,4 +1,4 @@
-from babbel_core.engine import process_message
+from babbel.engine import process_message
 
 def get_babbel_response(
     text,

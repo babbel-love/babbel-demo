@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Babbel
+Exec=babbel-run
+Icon=utilities-terminal
+Terminal=true
+Categories=Utility;
+

@@ -6,8 +6,8 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont, QClipboard
 import sys, os, json
-from babbel_core.core.orchestrator import process_message
-from babbel_core.core.config import load as load_config
+from babbel.orchestrator import process_message
+from babbel.config import load as load_config
 
 class BabbelApp(QWidget):
     def __init__(self):

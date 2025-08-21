@@ -1,2 +1,11 @@
-PyQt6>=6.5
-setuptools
+# Babbel Core Requirements
+
+openai
+pytest
+black
+isort
+PyQt6
+
+pytest
+tree
+
