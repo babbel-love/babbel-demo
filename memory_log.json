@@ -1,0 +1,37 @@
+[
+  {
+    "ts": "2025-08-20T22:35:48.406502+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "hiHiii",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T02:38:21.657354+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Test message",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\n• Talk it out: Say it aloud once; notice what shifts.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T02:39:34.383556+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Say something encouraging but practical.",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T02:55:37.448187+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Hello Babbel",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\n• Talk it out: Say it aloud once; notice what shifts.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-21T02:56:04.771425+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "I'm so happy to finally get here",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  }
+]

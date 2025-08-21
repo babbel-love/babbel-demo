@@ -1,0 +1,15 @@
+QMainWindow { background: #151515; color: #E6E6E6; }
+#Sidebar { background: #1f1f1f; border-right: 1px solid #2a2a2a; }
+#SidebarTitle { color: #fff; font-size: 20px; font-weight: 600; padding: 16px 12px 6px; }
+#MetadataPanel { background: #1f1f1f; border-left: 1px solid #2a2a2a; }
+#MetaTitle { color: #fff; font-size: 18px; font-weight: 600; padding: 16px 12px; }
+#ChatWidget { background: #151515; }
+#PreviewLabel { color: #9aa4b2; font-size: 11px; padding: 4px 8px; }
+QPushButton { background: #2a2a2a; color: #EDEDED; border: 1px solid #343434; border-radius: 10px; padding: 8px 12px; }
+QPushButton:hover { background: #323232; }
+QLineEdit { background: #1c1c1c; color: #ffffff; border: 1px solid #2d2d2d; border-radius: 12px; padding: 10px 12px; }
+#MsgBubble_user { background: #202020; border: 1px solid #2a2a2a; border-radius: 18px; padding: 12px; margin: 8px 80px 2px 80px; }
+#MsgBubble_assistant { background: #1a1a1a; border: 1px solid #252525; border-radius: 18px; padding: 12px; margin: 8px 80px 2px 80px; }
+#MetaCaption { color: #bdbdbd; font-size: 11px; padding-top: 6px; }
+#EmotionBar { padding: 2px 2px 0 2px; }
+#EmotionSeg { background: #4a9eff; border-radius: 3px; }

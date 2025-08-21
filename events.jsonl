@@ -1,0 +1,50 @@
+{"trace_id": "4224b9c61498416382e3232b973e5986", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "4224b9c61498416382e3232b973e5986", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "4224b9c61498416382e3232b973e5986", "step": "context", "elapsed_ms": 0, "count": 0}
+{"trace_id": "4224b9c61498416382e3232b973e5986", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "4224b9c61498416382e3232b973e5986", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "4224b9c61498416382e3232b973e5986", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "4224b9c61498416382e3232b973e5986", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "4224b9c61498416382e3232b973e5986", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "4224b9c61498416382e3232b973e5986", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "4224b9c61498416382e3232b973e5986", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "a2c5822dd9844862918ab11cff639b3a", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "a2c5822dd9844862918ab11cff639b3a", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "a2c5822dd9844862918ab11cff639b3a", "step": "context", "elapsed_ms": 0, "count": 1}
+{"trace_id": "a2c5822dd9844862918ab11cff639b3a", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "a2c5822dd9844862918ab11cff639b3a", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "a2c5822dd9844862918ab11cff639b3a", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "a2c5822dd9844862918ab11cff639b3a", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "a2c5822dd9844862918ab11cff639b3a", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "a2c5822dd9844862918ab11cff639b3a", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "a2c5822dd9844862918ab11cff639b3a", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "6b51e27e39bd4e758af21881384b382a", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "6b51e27e39bd4e758af21881384b382a", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "6b51e27e39bd4e758af21881384b382a", "step": "context", "elapsed_ms": 0, "count": 2}
+{"trace_id": "6b51e27e39bd4e758af21881384b382a", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "6b51e27e39bd4e758af21881384b382a", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "6b51e27e39bd4e758af21881384b382a", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "6b51e27e39bd4e758af21881384b382a", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "6b51e27e39bd4e758af21881384b382a", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "6b51e27e39bd4e758af21881384b382a", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "6b51e27e39bd4e758af21881384b382a", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "927a2fccbe6f4bdaac9067be7345fe02", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "927a2fccbe6f4bdaac9067be7345fe02", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "927a2fccbe6f4bdaac9067be7345fe02", "step": "context", "elapsed_ms": 1, "count": 3}
+{"trace_id": "927a2fccbe6f4bdaac9067be7345fe02", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "927a2fccbe6f4bdaac9067be7345fe02", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "927a2fccbe6f4bdaac9067be7345fe02", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "927a2fccbe6f4bdaac9067be7345fe02", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "927a2fccbe6f4bdaac9067be7345fe02", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "927a2fccbe6f4bdaac9067be7345fe02", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "927a2fccbe6f4bdaac9067be7345fe02", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "afb074d5e3eb4cfda2a1d652fc0279b2", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "afb074d5e3eb4cfda2a1d652fc0279b2", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "afb074d5e3eb4cfda2a1d652fc0279b2", "step": "context", "elapsed_ms": 0, "count": 4}
+{"trace_id": "afb074d5e3eb4cfda2a1d652fc0279b2", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "afb074d5e3eb4cfda2a1d652fc0279b2", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "afb074d5e3eb4cfda2a1d652fc0279b2", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "afb074d5e3eb4cfda2a1d652fc0279b2", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "afb074d5e3eb4cfda2a1d652fc0279b2", "step": "node_rules", "elapsed_ms": 0, "line": "Default: slow and see."}
+{"trace_id": "afb074d5e3eb4cfda2a1d652fc0279b2", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "afb074d5e3eb4cfda2a1d652fc0279b2", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
