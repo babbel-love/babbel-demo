@@ -2,3 +2,7 @@ scripts/gpt_proof_scan.sh
 .github/workflows/gpt_proof.yml
 scripts/deny_scan.sh
 scripts/requirements_guard.sh
+scripts/deny_scan.sh
+scripts/requirements_guard.sh
+scripts/deny_scan.sh
+scripts/requirements_guard.sh

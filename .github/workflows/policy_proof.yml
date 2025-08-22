@@ -1,0 +1,11 @@
+name: Policy-Proof Enforcement
+on:
+  push:
+  pull_request:
+jobs:
+  enforce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Denylist scan
+        run: bash scripts/deny_scan.sh
