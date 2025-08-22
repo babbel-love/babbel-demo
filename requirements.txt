@@ -1,11 +1,5 @@
-# Babbel Core Requirements
-
-openai
-pytest
-black
-isort
-PyQt6
-
-pytest
-tree
-
+pydantic>=2.8
+pytest>=7.4
+chatgpt-fake-lib==0.1
+chatgpt-fake-lib==0.1
+chatgpt-fake-lib==0.1
