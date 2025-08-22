@@ -1,3 +1,2 @@
-#!/bin/bash
-source .venv/bin/activate
-pytest tests/ --tb=short -q
+set -euo pipefail
+python -m pytest -q

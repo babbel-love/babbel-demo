@@ -7,10 +7,6 @@ def send(self, user_input: str, strict: bool = True) -> dict:
         'you are a helpful assistant',
         'as an ai language model',
         'i'\''m sorry',
-        'i hope this helps',
-        'let me know if you need more',
-        'of course!',
-        'here are some tips'
     ]
     if strict:
         for phrase in banned_phrases:

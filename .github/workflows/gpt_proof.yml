@@ -1,0 +1,9 @@
+name: GPT-Proof Enforcement
+on: [push,pull_request]
+jobs:
+  enforce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run GPT-proof scan
+        run: zsh scripts/gpt_proof_scan.sh

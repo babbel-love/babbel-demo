@@ -1,6 +1,6 @@
 from babbel.core import prompt_builder, protocol_guard, memory_anchor
 
-class BabbelEngine:
+class BabbelEngineMemory:
     def __init__(self):
         self.memory = {"anchor": "start", "node": "None", "emotion": "Neutral"}
 

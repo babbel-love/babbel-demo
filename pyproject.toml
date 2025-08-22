@@ -1,2 +1,28 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "babbel"
+version = "0.1.0"
+description = "Babbel Core and GUI"
+authors = [{name="Babbel"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pydantic>=2.8",
+]
+
 [tool.pytest.ini_options]
-python_files = tests/*.py
+minversion = "7.0"
+addopts = "-q"
+testpaths = ["tests"]
+filterwarnings = [
+  "ignore::DeprecationWarning",
+]
+
+[tool.setuptools]
+packages = ["babbel", "babbel.core", "babbel.gui"]
+
+[project.scripts]
+babbel-demo = "babbel.demo:main"

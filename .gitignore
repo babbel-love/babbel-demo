@@ -7,3 +7,5 @@ build/
 *.tmp
 *.bak
 *.egg-info/
+.env
+.env

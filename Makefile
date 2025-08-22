@@ -1,13 +1,14 @@
-rebuild:
-	./scripts/rebuild_env.sh
-check:
-	./scripts/full_check.sh
-guard:
-	./scripts/scan_override.sh
-hooks:
-	chmod +x .git/hooks/pre-commit
-structure:
-	./scripts/show_structure.sh
-reset:
-	./scripts/reset_state.sh
-.PHONY: rebuild check guard hooks structure reset
+.PHONY: install test scan check ci
+
+install:
+	python -m venv .venv && . .venv/bin/activate && pip install -U pip && pip install -r requirements.txt -e .
+
+test:
+	pytest
+
+scan:
+	bash scripts/gpt_proof_scan.sh
+
+check: scan test
+
+ci: check

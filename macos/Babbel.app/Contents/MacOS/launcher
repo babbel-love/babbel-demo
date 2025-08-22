@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+root="$(cd "$(dirname "$0")"/../../../.. && pwd)"
+cd "$root"
+if [ ! -d .venv ]; then
+  python -m venv .venv
+  . .venv/bin/activate
+  pip install -U pip
+  pip install -r requirements.txt -e .
+else
+  . .venv/bin/activate
+fi
+python - <<'PY'
+from babbel.cli import chat_once, set_langs, show_meta, cultural_shift
+set_langs("en","en")
+show_meta(True)
+cultural_shift(True)
+print(chat_once("hello from app"))
+PY

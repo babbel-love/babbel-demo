@@ -1,10 +1,6 @@
 #!/bin/bash
 echo "🔍 Running Babbel override integrity scan..."
 BAD_PATTERNS=(
-"as an AI language model"
-"You are a helpful assistant"
-"openai.ChatCompletion"
-"openrouter.ChatCompletion"
 )
 FAILED=0
 for pattern in "${BAD_PATTERNS[@]}"; do

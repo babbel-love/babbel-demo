@@ -1,0 +1,9 @@
+Branch: main
+Require a pull request before merging
+Require approvals with code owner review
+Require status checks to pass before merging
+Required checks: ci / repo-scan, ci / requirements-guard, ci / artifact-scan
+Require branches to be up to date before merging
+Include administrators
+Restrict who can push to matching branches: enabled
+Allow force pushes: disabled
