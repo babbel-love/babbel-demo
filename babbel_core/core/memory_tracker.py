@@ -1,26 +1,40 @@
-from __future__ import annotations
-import json
-from pathlib import Path
-from datetime import datetime, timezone
-from .config import load
+import json, os
+from datetime import datetime
+MEMORY_FILE = "memory_log.json"
 
-def _now_utc_iso() -> str:
-    return datetime.now(timezone.utc).isoformat()
-
-def log_interaction(emotion: str, intent: str, user_input: str, response: str) -> None:
-    cfg = load()
-    p = Path(cfg.MEMORY_FILE)
-    data = []
-    if p.exists():
-        try:
-            data = json.loads(p.read_text(encoding="utf-8"))
-        except Exception:
-            data = []
-    data.append({
-        "ts": _now_utc_iso(),
+def log_interaction(user_input, emotion, intent, raw_reply, final_reply, session_id: str = ""):
+    log = {
+        "timestamp": datetime.now().isoformat(),
+        "session_id": session_id or "",
+        "input": user_input,
         "emotion": emotion,
         "intent": intent,
-        "user_input": user_input,
-        "response": response
-    })
-    p.write_text(json.dumps(data[-100:], ensure_ascii=False, indent=2), encoding="utf-8")
+        "raw_reply": raw_reply,
+        "final_reply": final_reply
+    }
+    existing = []
+    if os.path.exists(MEMORY_FILE):
+        with open(MEMORY_FILE, "r", encoding="utf-8") as f:
+            try:
+                existing = json.load(f)
+            except json.JSONDecodeError:
+                existing = []
+    existing.append(log)
+    with open(MEMORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(existing[-100:], f, ensure_ascii=False, indent=2)
+
+def get_recent_emotions(n=10):
+    if not os.path.exists(MEMORY_FILE): 
+        return []
+    with open(MEMORY_FILE, "r", encoding="utf-8") as f:
+        try:
+            logs = json.load(f)
+            return [entry.get("emotion","") for entry in logs[-n:] if "emotion" in entry]
+        except Exception:
+            return []
+
+def attach_memory_anchor(messages, memory):
+    if isinstance(messages, list) and memory.get("anchor"):
+        anchor = memory["anchor"]
+        messages.append({"role": "system", "content": f"(Memory anchor: {anchor})"})
+    return messages

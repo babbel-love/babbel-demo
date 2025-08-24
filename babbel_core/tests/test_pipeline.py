@@ -1,6 +1,6 @@
-from babbel_core.pipeline import run_pipeline
+from babbel_core.core.pipeline import run_pipeline
 
 def test_pipeline_response():
     result = run_pipeline("How do I start a fire?")
-    assert isinstance(result, str)
-    assert "Final Answer:" in result
+    assert isinstance(result, dict)
+    assert "final_text" in result

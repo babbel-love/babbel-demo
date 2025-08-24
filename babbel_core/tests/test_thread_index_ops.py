@@ -1,5 +1,5 @@
 from babbel_core.thread import ConversationThread, SessionStore
-from babbel_core.schema_validation import validate_thread_dict
+from babbel_core.core.schema import validate_thread_dict
 
 def test_index_op():
     t = ConversationThread("index", "openrouter/auto", 0.5, 10)

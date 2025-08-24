@@ -22,7 +22,10 @@ def rewrite_tone(text: str) -> str:
 
 def enforce_babbel_style(text: str) -> str:
     out = text
-    for pattern, repl in _WEAK_PHRASES:
-        out = re.sub(pattern, repl, out, flags=re.IGNORECASE)
+    for pat, repl in _WEAK_PHRASES:
+        out = re.sub(pat, repl, out, flags=re.IGNORECASE)
     out = re.sub(r"\s{2,}", " ", out).strip()
     return out
+
+def rewrite_response(text: str) -> str:
+    return enforce_babbel_style(rewrite_tone(text)).strip()

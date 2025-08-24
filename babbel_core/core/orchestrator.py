@@ -1,10 +1,14 @@
-from core.pipeline import run_pipeline
+from __future__ import annotations
+from typing import Any
 
-class Orchestrator:
-    def __init__(self):
-        pass
+from .pipeline import run_pipeline
+from .observability import new_trace_id, utc_now_iso, jsonl_logger, time_block
 
-    def send_thread(self, thread_dict):
-        user_input = thread_dict["messages"][-1]["content"]
-        final = run_pipeline(user_input)
-        return {"text": final}
+def process_message(user_input: str) -> dict:
+    trace_id = new_trace_id()
+    with time_block(f"Process [{trace_id}]"):
+        return run_pipeline(user_input)
+
+# --- Injected to support orchestrator UX test ---
+def process_message(user_input: str) -> dict:
+    return run_pipeline(user_input)

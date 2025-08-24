@@ -1,4 +1,4 @@
-from babbel_core.review import run_review_stage
+from babbel_core.core.review import run_review_stage
 
 def test_review_stage_basic():
     result = run_review_stage("This is just a test. Maybe helpful.")

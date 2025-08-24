@@ -1,0 +1,463 @@
+test	Set up job	﻿2025-08-24T04:07:26.6807391Z Current runner version: '2.328.0'
+test	Set up job	2025-08-24T04:07:26.6841411Z ##[group]Runner Image Provisioner
+test	Set up job	2025-08-24T04:07:26.6842648Z Hosted Compute Agent
+test	Set up job	2025-08-24T04:07:26.6843569Z Version: 20250821.380
+test	Set up job	2025-08-24T04:07:26.6844526Z Commit: 438d12cb4fe092871db9867344e3bc0bc5319035
+test	Set up job	2025-08-24T04:07:26.6845633Z Build Date: 2025-08-21T20:49:43Z
+test	Set up job	2025-08-24T04:07:26.6846866Z ##[endgroup]
+test	Set up job	2025-08-24T04:07:26.6847638Z ##[group]Operating System
+test	Set up job	2025-08-24T04:07:26.6848576Z Ubuntu
+test	Set up job	2025-08-24T04:07:26.6849442Z 24.04.2
+test	Set up job	2025-08-24T04:07:26.6850103Z LTS
+test	Set up job	2025-08-24T04:07:26.6850856Z ##[endgroup]
+test	Set up job	2025-08-24T04:07:26.6851772Z ##[group]Runner Image
+test	Set up job	2025-08-24T04:07:26.6852637Z Image: ubuntu-24.04
+test	Set up job	2025-08-24T04:07:26.6853436Z Version: 20250818.1.0
+test	Set up job	2025-08-24T04:07:26.6855236Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250818.1/images/ubuntu/Ubuntu2404-Readme.md
+test	Set up job	2025-08-24T04:07:26.6857825Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250818.1
+test	Set up job	2025-08-24T04:07:26.6859848Z ##[endgroup]
+test	Set up job	2025-08-24T04:07:26.6861579Z ##[group]GITHUB_TOKEN Permissions
+test	Set up job	2025-08-24T04:07:26.6864134Z Contents: read
+test	Set up job	2025-08-24T04:07:26.6865009Z Metadata: read
+test	Set up job	2025-08-24T04:07:26.6865709Z Packages: read
+test	Set up job	2025-08-24T04:07:26.6866913Z ##[endgroup]
+test	Set up job	2025-08-24T04:07:26.6869918Z Secret source: Actions
+test	Set up job	2025-08-24T04:07:26.6870910Z Prepare workflow directory
+test	Set up job	2025-08-24T04:07:26.7342081Z Prepare all required actions
+test	Set up job	2025-08-24T04:07:26.7400759Z Getting action download info
+test	Set up job	2025-08-24T04:07:27.0063210Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+test	Set up job	2025-08-24T04:07:27.0880780Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+test	Set up job	2025-08-24T04:07:27.2397326Z Complete job name: test
+test	Checkout code	﻿2025-08-24T04:07:27.3187637Z ##[group]Run actions/checkout@v4
+test	Checkout code	2025-08-24T04:07:27.3188479Z with:
+test	Checkout code	2025-08-24T04:07:27.3188896Z   repository: babbel-love/babbel-demo
+test	Checkout code	2025-08-24T04:07:27.3189573Z   token: ***
+test	Checkout code	2025-08-24T04:07:27.3189946Z   ssh-strict: true
+test	Checkout code	2025-08-24T04:07:27.3190357Z   ssh-user: git
+test	Checkout code	2025-08-24T04:07:27.3190753Z   persist-credentials: true
+test	Checkout code	2025-08-24T04:07:27.3191191Z   clean: true
+test	Checkout code	2025-08-24T04:07:27.3191588Z   sparse-checkout-cone-mode: true
+test	Checkout code	2025-08-24T04:07:27.3192055Z   fetch-depth: 1
+test	Checkout code	2025-08-24T04:07:27.3192436Z   fetch-tags: false
+test	Checkout code	2025-08-24T04:07:27.3192844Z   show-progress: true
+test	Checkout code	2025-08-24T04:07:27.3193228Z   lfs: false
+test	Checkout code	2025-08-24T04:07:27.3193588Z   submodules: false
+test	Checkout code	2025-08-24T04:07:27.3194125Z   set-safe-directory: true
+test	Checkout code	2025-08-24T04:07:27.3194824Z ##[endgroup]
+test	Checkout code	2025-08-24T04:07:27.4269390Z Syncing repository: babbel-love/babbel-demo
+test	Checkout code	2025-08-24T04:07:27.4271213Z ##[group]Getting Git version info
+test	Checkout code	2025-08-24T04:07:27.4272104Z Working directory is '/home/runner/work/babbel-demo/babbel-demo'
+test	Checkout code	2025-08-24T04:07:27.4273129Z [command]/usr/bin/git version
+test	Checkout code	2025-08-24T04:07:27.4336694Z git version 2.51.0
+test	Checkout code	2025-08-24T04:07:27.4362788Z ##[endgroup]
+test	Checkout code	2025-08-24T04:07:27.4377735Z Temporarily overriding HOME='/home/runner/work/_temp/23de7ce3-8317-40a6-b82b-da2492d58469' before making global git config changes
+test	Checkout code	2025-08-24T04:07:27.4379123Z Adding repository directory to the temporary git global config as a safe directory
+test	Checkout code	2025-08-24T04:07:27.4390405Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/babbel-demo/babbel-demo
+test	Checkout code	2025-08-24T04:07:27.4427409Z Deleting the contents of '/home/runner/work/babbel-demo/babbel-demo'
+test	Checkout code	2025-08-24T04:07:27.4430983Z ##[group]Initializing the repository
+test	Checkout code	2025-08-24T04:07:27.4434915Z [command]/usr/bin/git init /home/runner/work/babbel-demo/babbel-demo
+test	Checkout code	2025-08-24T04:07:27.4515360Z hint: Using 'master' as the name for the initial branch. This default branch name
+test	Checkout code	2025-08-24T04:07:27.4517206Z hint: is subject to change. To configure the initial branch name to use in all
+test	Checkout code	2025-08-24T04:07:27.4518887Z hint: of your new repositories, which will suppress this warning, call:
+test	Checkout code	2025-08-24T04:07:27.4519838Z hint:
+test	Checkout code	2025-08-24T04:07:27.4520377Z hint: 	git config --global init.defaultBranch <name>
+test	Checkout code	2025-08-24T04:07:27.4521231Z hint:
+test	Checkout code	2025-08-24T04:07:27.4521783Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test	Checkout code	2025-08-24T04:07:27.4522707Z hint: 'development'. The just-created branch can be renamed via this command:
+test	Checkout code	2025-08-24T04:07:27.4523539Z hint:
+test	Checkout code	2025-08-24T04:07:27.4524143Z hint: 	git branch -m <name>
+test	Checkout code	2025-08-24T04:07:27.4524778Z hint:
+test	Checkout code	2025-08-24T04:07:27.4525359Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test	Checkout code	2025-08-24T04:07:27.4526538Z Initialized empty Git repository in /home/runner/work/babbel-demo/babbel-demo/.git/
+test	Checkout code	2025-08-24T04:07:27.4529990Z [command]/usr/bin/git remote add origin https://github.com/babbel-love/babbel-demo
+test	Checkout code	2025-08-24T04:07:27.4565563Z ##[endgroup]
+test	Checkout code	2025-08-24T04:07:27.4566523Z ##[group]Disabling automatic garbage collection
+test	Checkout code	2025-08-24T04:07:27.4569825Z [command]/usr/bin/git config --local gc.auto 0
+test	Checkout code	2025-08-24T04:07:27.4598594Z ##[endgroup]
+test	Checkout code	2025-08-24T04:07:27.4599276Z ##[group]Setting up auth
+test	Checkout code	2025-08-24T04:07:27.4605242Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Checkout code	2025-08-24T04:07:27.4635584Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Checkout code	2025-08-24T04:07:27.4927925Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Checkout code	2025-08-24T04:07:27.4957085Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Checkout code	2025-08-24T04:07:27.5181497Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test	Checkout code	2025-08-24T04:07:27.5216579Z ##[endgroup]
+test	Checkout code	2025-08-24T04:07:27.5217833Z ##[group]Fetching the repository
+test	Checkout code	2025-08-24T04:07:27.5236358Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +cf96448b279b4cc085097f0bea8d2a20f709b01c:refs/remotes/origin/main
+test	Checkout code	2025-08-24T04:07:27.7336241Z From https://github.com/babbel-love/babbel-demo
+test	Checkout code	2025-08-24T04:07:27.7337571Z  * [new ref]         cf96448b279b4cc085097f0bea8d2a20f709b01c -> origin/main
+test	Checkout code	2025-08-24T04:07:27.7418631Z ##[endgroup]
+test	Checkout code	2025-08-24T04:07:27.7419397Z ##[group]Determining the checkout info
+test	Checkout code	2025-08-24T04:07:27.7421002Z ##[endgroup]
+test	Checkout code	2025-08-24T04:07:27.7427808Z [command]/usr/bin/git sparse-checkout disable
+test	Checkout code	2025-08-24T04:07:27.7470639Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test	Checkout code	2025-08-24T04:07:27.7502064Z ##[group]Checking out the ref
+test	Checkout code	2025-08-24T04:07:27.7504246Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+test	Checkout code	2025-08-24T04:07:27.7625050Z Switched to a new branch 'main'
+test	Checkout code	2025-08-24T04:07:27.7627951Z branch 'main' set up to track 'origin/main'.
+test	Checkout code	2025-08-24T04:07:27.7634142Z ##[endgroup]
+test	Checkout code	2025-08-24T04:07:27.7672280Z [command]/usr/bin/git log -1 --format=%H
+test	Checkout code	2025-08-24T04:07:27.7694817Z cf96448b279b4cc085097f0bea8d2a20f709b01c
+test	Set up Python	﻿2025-08-24T04:07:27.7931466Z ##[group]Run actions/setup-python@v5
+test	Set up Python	2025-08-24T04:07:27.7932058Z with:
+test	Set up Python	2025-08-24T04:07:27.7932415Z   python-version: 3.11
+test	Set up Python	2025-08-24T04:07:27.7932825Z   check-latest: false
+test	Set up Python	2025-08-24T04:07:27.7933378Z   token: ***
+test	Set up Python	2025-08-24T04:07:27.7933749Z   update-environment: true
+test	Set up Python	2025-08-24T04:07:27.7934191Z   allow-prereleases: false
+test	Set up Python	2025-08-24T04:07:27.7934615Z   freethreaded: false
+test	Set up Python	2025-08-24T04:07:27.7935007Z ##[endgroup]
+test	Set up Python	2025-08-24T04:07:27.9640203Z ##[group]Installed versions
+test	Set up Python	2025-08-24T04:07:27.9749976Z Successfully set up CPython (3.11.13)
+test	Set up Python	2025-08-24T04:07:27.9751427Z ##[endgroup]
+test	Install dependencies	﻿2025-08-24T04:07:27.9863611Z ##[group]Run python -m venv .venv
+test	Install dependencies	2025-08-24T04:07:27.9864543Z [36;1mpython -m venv .venv[0m
+test	Install dependencies	2025-08-24T04:07:27.9865297Z [36;1msource .venv/bin/activate[0m
+test	Install dependencies	2025-08-24T04:07:27.9866271Z [36;1mpip install -r requirements.txt[0m
+test	Install dependencies	2025-08-24T04:07:27.9867074Z [36;1mpip install pytest[0m
+test	Install dependencies	2025-08-24T04:07:27.9952245Z shell: /usr/bin/bash -e {0}
+test	Install dependencies	2025-08-24T04:07:27.9953056Z env:
+test	Install dependencies	2025-08-24T04:07:27.9953786Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+test	Install dependencies	2025-08-24T04:07:27.9954822Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+test	Install dependencies	2025-08-24T04:07:27.9955840Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+test	Install dependencies	2025-08-24T04:07:27.9957089Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+test	Install dependencies	2025-08-24T04:07:27.9958057Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+test	Install dependencies	2025-08-24T04:07:27.9959008Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+test	Install dependencies	2025-08-24T04:07:27.9959878Z ##[endgroup]
+test	Install dependencies	2025-08-24T04:07:32.1981263Z Collecting streamlit (from -r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:32.2452063Z   Downloading streamlit-1.48.1-py3-none-any.whl.metadata (9.5 kB)
+test	Install dependencies	2025-08-24T04:07:32.2908409Z Collecting requests (from -r requirements.txt (line 2))
+test	Install dependencies	2025-08-24T04:07:32.2986285Z   Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+test	Install dependencies	2025-08-24T04:07:32.3679408Z Collecting pytest (from -r requirements.txt (line 3))
+test	Install dependencies	2025-08-24T04:07:32.3757494Z   Downloading pytest-8.4.1-py3-none-any.whl.metadata (7.7 kB)
+test	Install dependencies	2025-08-24T04:07:32.5352253Z Collecting pydantic (from -r requirements.txt (line 4))
+test	Install dependencies	2025-08-24T04:07:32.5432324Z   Downloading pydantic-2.11.7-py3-none-any.whl.metadata (67 kB)
+test	Install dependencies	2025-08-24T04:07:32.5553124Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.0/68.0 kB 6.3 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:32.7530419Z Collecting Pillow (from -r requirements.txt (line 5))
+test	Install dependencies	2025-08-24T04:07:32.7608080Z   Downloading pillow-11.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.0 kB)
+test	Install dependencies	2025-08-24T04:07:32.8148482Z Collecting altair!=5.4.0,!=5.4.1,<6,>=4.0 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:32.8224364Z   Downloading altair-5.5.0-py3-none-any.whl.metadata (11 kB)
+test	Install dependencies	2025-08-24T04:07:32.8460657Z Collecting blinker<2,>=1.5.0 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:32.8532665Z   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+test	Install dependencies	2025-08-24T04:07:32.9056772Z Collecting cachetools<7,>=4.0 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:32.9134060Z   Downloading cachetools-6.1.0-py3-none-any.whl.metadata (5.4 kB)
+test	Install dependencies	2025-08-24T04:07:32.9459208Z Collecting click<9,>=7.0 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:32.9532274Z   Downloading click-8.2.1-py3-none-any.whl.metadata (2.5 kB)
+test	Install dependencies	2025-08-24T04:07:33.1629134Z Collecting numpy<3,>=1.23 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:33.1703669Z   Downloading numpy-2.3.2-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+test	Install dependencies	2025-08-24T04:07:33.1753175Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.1/62.1 kB 18.6 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:33.2158466Z Collecting packaging<26,>=20 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:33.2233716Z   Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+test	Install dependencies	2025-08-24T04:07:33.3650223Z Collecting pandas<3,>=1.4.0 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:33.3726902Z   Downloading pandas-2.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (91 kB)
+test	Install dependencies	2025-08-24T04:07:33.3780783Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.2/91.2 kB 25.5 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:33.6367779Z Collecting protobuf<7,>=3.20 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:33.6443494Z   Downloading protobuf-6.32.0-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+test	Install dependencies	2025-08-24T04:07:33.7434754Z Collecting pyarrow>=7.0 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:33.7512115Z   Downloading pyarrow-21.0.0-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+test	Install dependencies	2025-08-24T04:07:33.7929859Z Collecting tenacity<10,>=8.1.0 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:33.8003449Z   Downloading tenacity-9.1.2-py3-none-any.whl.metadata (1.2 kB)
+test	Install dependencies	2025-08-24T04:07:33.8214134Z Collecting toml<2,>=0.10.1 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:33.8293676Z   Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+test	Install dependencies	2025-08-24T04:07:33.8674264Z Collecting typing-extensions<5,>=4.4.0 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:33.8754463Z   Downloading typing_extensions-4.14.1-py3-none-any.whl.metadata (3.0 kB)
+test	Install dependencies	2025-08-24T04:07:33.9445487Z Collecting watchdog<7,>=2.1.5 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:33.9521140Z   Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl.metadata (44 kB)
+test	Install dependencies	2025-08-24T04:07:33.9571245Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.3/44.3 kB 12.5 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:34.0047845Z Collecting gitpython!=3.1.19,<4,>=3.0.7 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:34.0127916Z   Downloading gitpython-3.1.45-py3-none-any.whl.metadata (13 kB)
+test	Install dependencies	2025-08-24T04:07:34.0427025Z Collecting pydeck<1,>=0.8.0b4 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:34.0523612Z   Downloading pydeck-0.9.1-py2.py3-none-any.whl.metadata (4.1 kB)
+test	Install dependencies	2025-08-24T04:07:34.1116407Z Collecting tornado!=6.5.0,<7,>=6.0.3 (from streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:34.1193940Z   Downloading tornado-6.5.2-cp39-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.8 kB)
+test	Install dependencies	2025-08-24T04:07:34.2257540Z Collecting charset_normalizer<4,>=2 (from requests->-r requirements.txt (line 2))
+test	Install dependencies	2025-08-24T04:07:34.2335529Z   Downloading charset_normalizer-3.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (36 kB)
+test	Install dependencies	2025-08-24T04:07:34.2626629Z Collecting idna<4,>=2.5 (from requests->-r requirements.txt (line 2))
+test	Install dependencies	2025-08-24T04:07:34.2700157Z   Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+test	Install dependencies	2025-08-24T04:07:34.3253454Z Collecting urllib3<3,>=1.21.1 (from requests->-r requirements.txt (line 2))
+test	Install dependencies	2025-08-24T04:07:34.3331374Z   Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+test	Install dependencies	2025-08-24T04:07:34.3696470Z Collecting certifi>=2017.4.17 (from requests->-r requirements.txt (line 2))
+test	Install dependencies	2025-08-24T04:07:34.3772389Z   Downloading certifi-2025.8.3-py3-none-any.whl.metadata (2.4 kB)
+test	Install dependencies	2025-08-24T04:07:34.4075015Z Collecting iniconfig>=1 (from pytest->-r requirements.txt (line 3))
+test	Install dependencies	2025-08-24T04:07:34.4147313Z   Downloading iniconfig-2.1.0-py3-none-any.whl.metadata (2.7 kB)
+test	Install dependencies	2025-08-24T04:07:34.4419893Z Collecting pluggy<2,>=1.5 (from pytest->-r requirements.txt (line 3))
+test	Install dependencies	2025-08-24T04:07:34.4496386Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+test	Install dependencies	2025-08-24T04:07:34.4851104Z Collecting pygments>=2.7.2 (from pytest->-r requirements.txt (line 3))
+test	Install dependencies	2025-08-24T04:07:34.4924032Z   Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+test	Install dependencies	2025-08-24T04:07:34.5201716Z Collecting annotated-types>=0.6.0 (from pydantic->-r requirements.txt (line 4))
+test	Install dependencies	2025-08-24T04:07:34.5274454Z   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+test	Install dependencies	2025-08-24T04:07:35.3436802Z Collecting pydantic-core==2.33.2 (from pydantic->-r requirements.txt (line 4))
+test	Install dependencies	2025-08-24T04:07:35.3514303Z   Downloading pydantic_core-2.33.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+test	Install dependencies	2025-08-24T04:07:35.3766290Z Collecting typing-inspection>=0.4.0 (from pydantic->-r requirements.txt (line 4))
+test	Install dependencies	2025-08-24T04:07:35.3839044Z   Downloading typing_inspection-0.4.1-py3-none-any.whl.metadata (2.6 kB)
+test	Install dependencies	2025-08-24T04:07:35.4590551Z Collecting jinja2 (from altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:35.4674369Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+test	Install dependencies	2025-08-24T04:07:35.5114746Z Collecting jsonschema>=3.0 (from altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:35.5189837Z   Downloading jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+test	Install dependencies	2025-08-24T04:07:35.5945138Z Collecting narwhals>=1.14.2 (from altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:35.6022321Z   Downloading narwhals-2.1.2-py3-none-any.whl.metadata (11 kB)
+test	Install dependencies	2025-08-24T04:07:35.6563825Z Collecting gitdb<5,>=4.0.1 (from gitpython!=3.1.19,<4,>=3.0.7->streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:35.6636881Z   Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+test	Install dependencies	2025-08-24T04:07:35.7717262Z Collecting python-dateutil>=2.8.2 (from pandas<3,>=1.4.0->streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:35.7791490Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+test	Install dependencies	2025-08-24T04:07:35.8386713Z Collecting pytz>=2020.1 (from pandas<3,>=1.4.0->streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:35.8463648Z   Downloading pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+test	Install dependencies	2025-08-24T04:07:35.8750507Z Collecting tzdata>=2022.7 (from pandas<3,>=1.4.0->streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:35.8824214Z   Downloading tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+test	Install dependencies	2025-08-24T04:07:35.9941325Z Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->gitpython!=3.1.19,<4,>=3.0.7->streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:36.0013726Z   Downloading smmap-5.0.2-py3-none-any.whl.metadata (4.3 kB)
+test	Install dependencies	2025-08-24T04:07:36.0717682Z Collecting MarkupSafe>=2.0 (from jinja2->altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:36.0793780Z   Downloading MarkupSafe-3.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+test	Install dependencies	2025-08-24T04:07:36.1282470Z Collecting attrs>=22.2.0 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:36.1356557Z   Downloading attrs-25.3.0-py3-none-any.whl.metadata (10 kB)
+test	Install dependencies	2025-08-24T04:07:36.1631023Z Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:36.1712338Z   Downloading jsonschema_specifications-2025.4.1-py3-none-any.whl.metadata (2.9 kB)
+test	Install dependencies	2025-08-24T04:07:36.2148310Z Collecting referencing>=0.28.4 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:36.2227970Z   Downloading referencing-0.36.2-py3-none-any.whl.metadata (2.8 kB)
+test	Install dependencies	2025-08-24T04:07:36.5936837Z Collecting rpds-py>=0.7.1 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:36.6019081Z   Downloading rpds_py-0.27.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.2 kB)
+test	Install dependencies	2025-08-24T04:07:36.6467379Z Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas<3,>=1.4.0->streamlit->-r requirements.txt (line 1))
+test	Install dependencies	2025-08-24T04:07:36.6540361Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+test	Install dependencies	2025-08-24T04:07:36.7705795Z Downloading streamlit-1.48.1-py3-none-any.whl (9.9 MB)
+test	Install dependencies	2025-08-24T04:07:36.8479038Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 132.9 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:36.8552420Z Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+test	Install dependencies	2025-08-24T04:07:36.8599389Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.7/64.7 kB 19.5 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:36.8674089Z Downloading pytest-8.4.1-py3-none-any.whl (365 kB)
+test	Install dependencies	2025-08-24T04:07:36.8738671Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 365.5/365.5 kB 80.9 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:36.8813346Z Downloading pydantic-2.11.7-py3-none-any.whl (444 kB)
+test	Install dependencies	2025-08-24T04:07:36.8885097Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 444.8/444.8 kB 84.3 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:36.8954765Z Downloading pydantic_core-2.33.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+test	Install dependencies	2025-08-24T04:07:36.9126099Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 131.9 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:36.9205472Z Downloading pillow-11.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.6 MB)
+test	Install dependencies	2025-08-24T04:07:36.9723086Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 134.6 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:36.9794414Z Downloading altair-5.5.0-py3-none-any.whl (731 kB)
+test	Install dependencies	2025-08-24T04:07:36.9883405Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 731.2/731.2 kB 106.5 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:36.9956466Z Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+test	Install dependencies	2025-08-24T04:07:37.0049565Z Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+test	Install dependencies	2025-08-24T04:07:37.0147822Z Downloading cachetools-6.1.0-py3-none-any.whl (11 kB)
+test	Install dependencies	2025-08-24T04:07:37.0242834Z Downloading certifi-2025.8.3-py3-none-any.whl (161 kB)
+test	Install dependencies	2025-08-24T04:07:37.0292910Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 161.2/161.2 kB 47.0 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.0363925Z Downloading charset_normalizer-3.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (150 kB)
+test	Install dependencies	2025-08-24T04:07:37.0413053Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 150.3/150.3 kB 45.3 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.0488074Z Downloading click-8.2.1-py3-none-any.whl (102 kB)
+test	Install dependencies	2025-08-24T04:07:37.0533329Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 102.2/102.2 kB 32.1 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.0608467Z Downloading gitpython-3.1.45-py3-none-any.whl (208 kB)
+test	Install dependencies	2025-08-24T04:07:37.0668660Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.2/208.2 kB 49.7 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.0749973Z Downloading idna-3.10-py3-none-any.whl (70 kB)
+test	Install dependencies	2025-08-24T04:07:37.0818314Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.4/70.4 kB 11.8 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.0888494Z Downloading iniconfig-2.1.0-py3-none-any.whl (6.0 kB)
+test	Install dependencies	2025-08-24T04:07:37.0983958Z Downloading numpy-2.3.2-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+test	Install dependencies	2025-08-24T04:07:37.2243130Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 122.8 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.2317659Z Downloading packaging-25.0-py3-none-any.whl (66 kB)
+test	Install dependencies	2025-08-24T04:07:37.2366577Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.5/66.5 kB 19.9 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.2444169Z Downloading pandas-2.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.4 MB)
+test	Install dependencies	2025-08-24T04:07:37.3186391Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 162.2 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.3263330Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+test	Install dependencies	2025-08-24T04:07:37.3365252Z Downloading protobuf-6.32.0-cp39-abi3-manylinux2014_x86_64.whl (322 kB)
+test	Install dependencies	2025-08-24T04:07:37.3432714Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 322.0/322.0 kB 63.4 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.3503820Z Downloading pyarrow-21.0.0-cp311-cp311-manylinux_2_28_x86_64.whl (42.8 MB)
+test	Install dependencies	2025-08-24T04:07:37.5881283Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.8/42.8 MB 106.0 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.5959410Z Downloading pydeck-0.9.1-py2.py3-none-any.whl (6.9 MB)
+test	Install dependencies	2025-08-24T04:07:37.6370098Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 176.0 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.6446071Z Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+test	Install dependencies	2025-08-24T04:07:37.6560684Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 124.7 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.6634082Z Downloading tenacity-9.1.2-py3-none-any.whl (28 kB)
+test	Install dependencies	2025-08-24T04:07:37.6733820Z Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+test	Install dependencies	2025-08-24T04:07:37.6838563Z Downloading tornado-6.5.2-cp39-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (443 kB)
+test	Install dependencies	2025-08-24T04:07:37.6910537Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 443.9/443.9 kB 81.8 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.6982418Z Downloading typing_extensions-4.14.1-py3-none-any.whl (43 kB)
+test	Install dependencies	2025-08-24T04:07:37.7024005Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.9/43.9 kB 14.1 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.7095623Z Downloading typing_inspection-0.4.1-py3-none-any.whl (14 kB)
+test	Install dependencies	2025-08-24T04:07:37.7189487Z Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+test	Install dependencies	2025-08-24T04:07:37.7243679Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.8/129.8 kB 32.8 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.7312974Z Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl (79 kB)
+test	Install dependencies	2025-08-24T04:07:37.7357461Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.1/79.1 kB 25.9 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.7428236Z Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+test	Install dependencies	2025-08-24T04:07:37.7472789Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 kB 19.2 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.7549316Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+test	Install dependencies	2025-08-24T04:07:37.7595098Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 43.9 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.7671054Z Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+test	Install dependencies	2025-08-24T04:07:37.7716423Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.0/90.0 kB 28.3 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.7798043Z Downloading narwhals-2.1.2-py3-none-any.whl (392 kB)
+test	Install dependencies	2025-08-24T04:07:37.7862078Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 392.1/392.1 kB 87.1 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.7933389Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+test	Install dependencies	2025-08-24T04:07:37.7983905Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 64.1 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.8053287Z Downloading pytz-2025.2-py2.py3-none-any.whl (509 kB)
+test	Install dependencies	2025-08-24T04:07:37.8125043Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 509.2/509.2 kB 95.8 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.8196617Z Downloading tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+test	Install dependencies	2025-08-24T04:07:37.8265572Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 347.8/347.8 kB 68.1 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.8339658Z Downloading attrs-25.3.0-py3-none-any.whl (63 kB)
+test	Install dependencies	2025-08-24T04:07:37.8384487Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 19.2 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.8456716Z Downloading jsonschema_specifications-2025.4.1-py3-none-any.whl (18 kB)
+test	Install dependencies	2025-08-24T04:07:37.8553184Z Downloading MarkupSafe-3.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (23 kB)
+test	Install dependencies	2025-08-24T04:07:37.8653402Z Downloading referencing-0.36.2-py3-none-any.whl (26 kB)
+test	Install dependencies	2025-08-24T04:07:37.8822056Z Downloading rpds_py-0.27.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (383 kB)
+test	Install dependencies	2025-08-24T04:07:37.8890475Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 383.7/383.7 kB 79.2 MB/s eta 0:00:00
+test	Install dependencies	2025-08-24T04:07:37.8962011Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+test	Install dependencies	2025-08-24T04:07:37.9061460Z Downloading smmap-5.0.2-py3-none-any.whl (24 kB)
+test	Install dependencies	2025-08-24T04:07:38.3664119Z Installing collected packages: pytz, watchdog, urllib3, tzdata, typing-extensions, tornado, toml, tenacity, smmap, six, rpds-py, pygments, pyarrow, protobuf, pluggy, Pillow, packaging, numpy, narwhals, MarkupSafe, iniconfig, idna, click, charset_normalizer, certifi, cachetools, blinker, attrs, annotated-types, typing-inspection, requests, referencing, python-dateutil, pytest, pydantic-core, jinja2, gitdb, pydeck, pydantic, pandas, jsonschema-specifications, gitpython, jsonschema, altair, streamlit
+test	Install dependencies	2025-08-24T04:07:50.3576611Z Successfully installed MarkupSafe-3.0.2 Pillow-11.3.0 altair-5.5.0 annotated-types-0.7.0 attrs-25.3.0 blinker-1.9.0 cachetools-6.1.0 certifi-2025.8.3 charset_normalizer-3.4.3 click-8.2.1 gitdb-4.0.12 gitpython-3.1.45 idna-3.10 iniconfig-2.1.0 jinja2-3.1.6 jsonschema-4.25.1 jsonschema-specifications-2025.4.1 narwhals-2.1.2 numpy-2.3.2 packaging-25.0 pandas-2.3.2 pluggy-1.6.0 protobuf-6.32.0 pyarrow-21.0.0 pydantic-2.11.7 pydantic-core-2.33.2 pydeck-0.9.1 pygments-2.19.2 pytest-8.4.1 python-dateutil-2.9.0.post0 pytz-2025.2 referencing-0.36.2 requests-2.32.5 rpds-py-0.27.0 six-1.17.0 smmap-5.0.2 streamlit-1.48.1 tenacity-9.1.2 toml-0.10.2 tornado-6.5.2 typing-extensions-4.14.1 typing-inspection-0.4.1 tzdata-2025.2 urllib3-2.5.0 watchdog-6.0.0
+test	Install dependencies	2025-08-24T04:07:50.5564721Z 
+test	Install dependencies	2025-08-24T04:07:50.5635554Z [notice] A new release of pip is available: 24.0 -> 25.2
+test	Install dependencies	2025-08-24T04:07:50.5636540Z [notice] To update, run: pip install --upgrade pip
+test	Install dependencies	2025-08-24T04:07:51.6811158Z Requirement already satisfied: pytest in ./.venv/lib/python3.11/site-packages (8.4.1)
+test	Install dependencies	2025-08-24T04:07:51.6913958Z Requirement already satisfied: iniconfig>=1 in ./.venv/lib/python3.11/site-packages (from pytest) (2.1.0)
+test	Install dependencies	2025-08-24T04:07:51.6923834Z Requirement already satisfied: packaging>=20 in ./.venv/lib/python3.11/site-packages (from pytest) (25.0)
+test	Install dependencies	2025-08-24T04:07:51.6935526Z Requirement already satisfied: pluggy<2,>=1.5 in ./.venv/lib/python3.11/site-packages (from pytest) (1.6.0)
+test	Install dependencies	2025-08-24T04:07:51.6945455Z Requirement already satisfied: pygments>=2.7.2 in ./.venv/lib/python3.11/site-packages (from pytest) (2.19.2)
+test	Install dependencies	2025-08-24T04:07:52.0688742Z 
+test	Install dependencies	2025-08-24T04:07:52.0689305Z [notice] A new release of pip is available: 24.0 -> 25.2
+test	Install dependencies	2025-08-24T04:07:52.0689790Z [notice] To update, run: pip install --upgrade pip
+test	Run tests	﻿2025-08-24T04:07:52.1243699Z ##[group]Run source .venv/bin/activate
+test	Run tests	2025-08-24T04:07:52.1244025Z [36;1msource .venv/bin/activate[0m
+test	Run tests	2025-08-24T04:07:52.1244327Z [36;1mPYTHONPATH=. pytest tests/ --tb=short -q[0m
+test	Run tests	2025-08-24T04:07:52.1286894Z shell: /usr/bin/bash -e {0}
+test	Run tests	2025-08-24T04:07:52.1287118Z env:
+test	Run tests	2025-08-24T04:07:52.1287394Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+test	Run tests	2025-08-24T04:07:52.1287798Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+test	Run tests	2025-08-24T04:07:52.1288205Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+test	Run tests	2025-08-24T04:07:52.1288543Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+test	Run tests	2025-08-24T04:07:52.1288903Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+test	Run tests	2025-08-24T04:07:52.1289271Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+test	Run tests	2025-08-24T04:07:52.1289559Z ##[endgroup]
+test	Run tests	2025-08-24T04:07:52.9847669Z 
+test	Run tests	2025-08-24T04:07:52.9848003Z ==================================== ERRORS ====================================
+test	Run tests	2025-08-24T04:07:52.9848728Z ____________________ ERROR collecting tests/test_engine.py _____________________
+test	Run tests	2025-08-24T04:07:52.9849412Z ImportError while importing test module '/home/runner/work/babbel-demo/babbel-demo/tests/test_engine.py'.
+test	Run tests	2025-08-24T04:07:52.9850240Z Hint: make sure your test modules/packages have valid Python names.
+test	Run tests	2025-08-24T04:07:52.9850785Z Traceback:
+test	Run tests	2025-08-24T04:07:52.9851394Z /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/importlib/__init__.py:126: in import_module
+test	Run tests	2025-08-24T04:07:52.9852684Z     return _bootstrap._gcd_import(name[level:], package, level)
+test	Run tests	2025-08-24T04:07:52.9853188Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test	Run tests	2025-08-24T04:07:52.9853447Z tests/test_engine.py:5: in <module>
+test	Run tests	2025-08-24T04:07:52.9853699Z     from core.engine import BabbelEngine
+test	Run tests	2025-08-24T04:07:52.9854204Z E   ImportError: cannot import name 'BabbelEngine' from 'core.engine' (/home/runner/work/babbel-demo/babbel-demo/core/engine.py)
+test	Run tests	2025-08-24T04:07:52.9854803Z _________________ ERROR collecting tests/test_export_script.py _________________
+test	Run tests	2025-08-24T04:07:52.9855370Z ImportError while importing test module '/home/runner/work/babbel-demo/babbel-demo/tests/test_export_script.py'.
+test	Run tests	2025-08-24T04:07:52.9856201Z Hint: make sure your test modules/packages have valid Python names.
+test	Run tests	2025-08-24T04:07:52.9856540Z Traceback:
+test	Run tests	2025-08-24T04:07:52.9856920Z /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/importlib/__init__.py:126: in import_module
+test	Run tests	2025-08-24T04:07:52.9857438Z     return _bootstrap._gcd_import(name[level:], package, level)
+test	Run tests	2025-08-24T04:07:52.9857750Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test	Run tests	2025-08-24T04:07:52.9858023Z tests/test_export_script.py:6: in <module>
+test	Run tests	2025-08-24T04:07:52.9858358Z     from thread import SessionStore, ConversationThread
+test	Run tests	2025-08-24T04:07:52.9858641Z thread.py:4: in <module>
+test	Run tests	2025-08-24T04:07:52.9858886Z     from schema_validation import validate_thread_dict
+test	Run tests	2025-08-24T04:07:52.9859226Z E   ModuleNotFoundError: No module named 'schema_validation'
+test	Run tests	2025-08-24T04:07:52.9859623Z ___________________ ERROR collecting tests/test_pipeline.py ____________________
+test	Run tests	2025-08-24T04:07:52.9860180Z ImportError while importing test module '/home/runner/work/babbel-demo/babbel-demo/tests/test_pipeline.py'.
+test	Run tests	2025-08-24T04:07:52.9860726Z Hint: make sure your test modules/packages have valid Python names.
+test	Run tests	2025-08-24T04:07:52.9861040Z Traceback:
+test	Run tests	2025-08-24T04:07:52.9861399Z /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/importlib/__init__.py:126: in import_module
+test	Run tests	2025-08-24T04:07:52.9861903Z     return _bootstrap._gcd_import(name[level:], package, level)
+test	Run tests	2025-08-24T04:07:52.9862205Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test	Run tests	2025-08-24T04:07:52.9862461Z tests/test_pipeline.py:5: in <module>
+test	Run tests	2025-08-24T04:07:52.9862712Z     from core.pipeline import run
+test	Run tests	2025-08-24T04:07:52.9863190Z E   ImportError: cannot import name 'run' from 'core.pipeline' (/home/runner/work/babbel-demo/babbel-demo/core/pipeline.py)
+test	Run tests	2025-08-24T04:07:52.9863781Z _______________ ERROR collecting tests/test_pop_last_exchange.py _______________
+test	Run tests	2025-08-24T04:07:52.9864639Z ImportError while importing test module '/home/runner/work/babbel-demo/babbel-demo/tests/test_pop_last_exchange.py'.
+test	Run tests	2025-08-24T04:07:52.9865214Z Hint: make sure your test modules/packages have valid Python names.
+test	Run tests	2025-08-24T04:07:52.9865519Z Traceback:
+test	Run tests	2025-08-24T04:07:52.9866099Z /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/importlib/__init__.py:126: in import_module
+test	Run tests	2025-08-24T04:07:52.9866635Z     return _bootstrap._gcd_import(name[level:], package, level)
+test	Run tests	2025-08-24T04:07:52.9866940Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test	Run tests	2025-08-24T04:07:52.9867216Z tests/test_pop_last_exchange.py:5: in <module>
+test	Run tests	2025-08-24T04:07:52.9867499Z     from thread import ConversationThread
+test	Run tests	2025-08-24T04:07:52.9867748Z thread.py:4: in <module>
+test	Run tests	2025-08-24T04:07:52.9867979Z     from schema_validation import validate_thread_dict
+test	Run tests	2025-08-24T04:07:52.9868321Z E   ModuleNotFoundError: No module named 'schema_validation'
+test	Run tests	2025-08-24T04:07:52.9868717Z ____________________ ERROR collecting tests/test_review.py _____________________
+test	Run tests	2025-08-24T04:07:52.9869239Z ImportError while importing test module '/home/runner/work/babbel-demo/babbel-demo/tests/test_review.py'.
+test	Run tests	2025-08-24T04:07:52.9869759Z Hint: make sure your test modules/packages have valid Python names.
+test	Run tests	2025-08-24T04:07:52.9870047Z Traceback:
+test	Run tests	2025-08-24T04:07:52.9870398Z /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/importlib/__init__.py:126: in import_module
+test	Run tests	2025-08-24T04:07:52.9871025Z     return _bootstrap._gcd_import(name[level:], package, level)
+test	Run tests	2025-08-24T04:07:52.9871319Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test	Run tests	2025-08-24T04:07:52.9871566Z tests/test_review.py:5: in <module>
+test	Run tests	2025-08-24T04:07:52.9871845Z     from review import enforce_tone_and_style, summarize_flags
+test	Run tests	2025-08-24T04:07:52.9872433Z E   ImportError: cannot import name 'enforce_tone_and_style' from 'review' (/home/runner/work/babbel-demo/babbel-demo/babbel_core/review.py)
+test	Run tests	2025-08-24T04:07:52.9873044Z __________________ ERROR collecting tests/test_session_cli.py __________________
+test	Run tests	2025-08-24T04:07:52.9873590Z ImportError while importing test module '/home/runner/work/babbel-demo/babbel-demo/tests/test_session_cli.py'.
+test	Run tests	2025-08-24T04:07:52.9874123Z Hint: make sure your test modules/packages have valid Python names.
+test	Run tests	2025-08-24T04:07:52.9874412Z Traceback:
+test	Run tests	2025-08-24T04:07:52.9874764Z /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/importlib/__init__.py:126: in import_module
+test	Run tests	2025-08-24T04:07:52.9875257Z     return _bootstrap._gcd_import(name[level:], package, level)
+test	Run tests	2025-08-24T04:07:52.9875558Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test	Run tests	2025-08-24T04:07:52.9875800Z tests/test_session_cli.py:6: in <module>
+test	Run tests	2025-08-24T04:07:52.9876371Z     from thread import SessionStore, ConversationThread
+test	Run tests	2025-08-24T04:07:52.9876643Z thread.py:4: in <module>
+test	Run tests	2025-08-24T04:07:52.9876902Z     from schema_validation import validate_thread_dict
+test	Run tests	2025-08-24T04:07:52.9877307Z E   ModuleNotFoundError: No module named 'schema_validation'
+test	Run tests	2025-08-24T04:07:52.9877689Z _______________ ERROR collecting tests/test_session_metadata.py ________________
+test	Run tests	2025-08-24T04:07:52.9878261Z ImportError while importing test module '/home/runner/work/babbel-demo/babbel-demo/tests/test_session_metadata.py'.
+test	Run tests	2025-08-24T04:07:52.9878808Z Hint: make sure your test modules/packages have valid Python names.
+test	Run tests	2025-08-24T04:07:52.9879091Z Traceback:
+test	Run tests	2025-08-24T04:07:52.9879443Z /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/importlib/__init__.py:126: in import_module
+test	Run tests	2025-08-24T04:07:52.9879913Z     return _bootstrap._gcd_import(name[level:], package, level)
+test	Run tests	2025-08-24T04:07:52.9880204Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test	Run tests	2025-08-24T04:07:52.9880463Z tests/test_session_metadata.py:6: in <module>
+test	Run tests	2025-08-24T04:07:52.9880757Z     from thread import ConversationThread, SessionStore
+test	Run tests	2025-08-24T04:07:52.9881029Z thread.py:4: in <module>
+test	Run tests	2025-08-24T04:07:52.9881436Z     from schema_validation import validate_thread_dict
+test	Run tests	2025-08-24T04:07:52.9881773Z E   ModuleNotFoundError: No module named 'schema_validation'
+test	Run tests	2025-08-24T04:07:52.9882157Z ________________ ERROR collecting tests/test_session_search.py _________________
+test	Run tests	2025-08-24T04:07:52.9882734Z ImportError while importing test module '/home/runner/work/babbel-demo/babbel-demo/tests/test_session_search.py'.
+test	Run tests	2025-08-24T04:07:52.9883273Z Hint: make sure your test modules/packages have valid Python names.
+test	Run tests	2025-08-24T04:07:52.9883579Z Traceback:
+test	Run tests	2025-08-24T04:07:52.9883925Z /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/importlib/__init__.py:126: in import_module
+test	Run tests	2025-08-24T04:07:52.9884400Z     return _bootstrap._gcd_import(name[level:], package, level)
+test	Run tests	2025-08-24T04:07:52.9884706Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test	Run tests	2025-08-24T04:07:52.9884954Z tests/test_session_search.py:6: in <module>
+test	Run tests	2025-08-24T04:07:52.9885245Z     from thread import ConversationThread, SessionStore
+test	Run tests	2025-08-24T04:07:52.9885515Z thread.py:4: in <module>
+test	Run tests	2025-08-24T04:07:52.9885745Z     from schema_validation import validate_thread_dict
+test	Run tests	2025-08-24T04:07:52.9886340Z E   ModuleNotFoundError: No module named 'schema_validation'
+test	Run tests	2025-08-24T04:07:52.9886732Z _______________ ERROR collecting tests/test_thread_index_ops.py ________________
+test	Run tests	2025-08-24T04:07:52.9887298Z ImportError while importing test module '/home/runner/work/babbel-demo/babbel-demo/tests/test_thread_index_ops.py'.
+test	Run tests	2025-08-24T04:07:52.9887984Z Hint: make sure your test modules/packages have valid Python names.
+test	Run tests	2025-08-24T04:07:52.9888283Z Traceback:
+test	Run tests	2025-08-24T04:07:52.9888629Z /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/importlib/__init__.py:126: in import_module
+test	Run tests	2025-08-24T04:07:52.9889106Z     return _bootstrap._gcd_import(name[level:], package, level)
+test	Run tests	2025-08-24T04:07:52.9889407Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test	Run tests	2025-08-24T04:07:52.9889658Z tests/test_thread_index_ops.py:6: in <module>
+test	Run tests	2025-08-24T04:07:52.9889955Z     from thread import ConversationThread, SessionStore
+test	Run tests	2025-08-24T04:07:52.9890222Z thread.py:4: in <module>
+test	Run tests	2025-08-24T04:07:52.9890456Z     from schema_validation import validate_thread_dict
+test	Run tests	2025-08-24T04:07:52.9890776Z E   ModuleNotFoundError: No module named 'schema_validation'
+test	Run tests	2025-08-24T04:07:52.9891167Z ______________ ERROR collecting tests/test_thread_persistence.py _______________
+test	Run tests	2025-08-24T04:07:52.9891750Z ImportError while importing test module '/home/runner/work/babbel-demo/babbel-demo/tests/test_thread_persistence.py'.
+test	Run tests	2025-08-24T04:07:52.9892311Z Hint: make sure your test modules/packages have valid Python names.
+test	Run tests	2025-08-24T04:07:52.9892605Z Traceback:
+test	Run tests	2025-08-24T04:07:52.9892940Z /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/importlib/__init__.py:126: in import_module
+test	Run tests	2025-08-24T04:07:52.9893415Z     return _bootstrap._gcd_import(name[level:], package, level)
+test	Run tests	2025-08-24T04:07:52.9893704Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test	Run tests	2025-08-24T04:07:52.9893973Z tests/test_thread_persistence.py:6: in <module>
+test	Run tests	2025-08-24T04:07:52.9894273Z     from thread import ConversationThread, SessionStore
+test	Run tests	2025-08-24T04:07:52.9894533Z thread.py:4: in <module>
+test	Run tests	2025-08-24T04:07:52.9894801Z     from schema_validation import validate_thread_dict
+test	Run tests	2025-08-24T04:07:52.9895123Z E   ModuleNotFoundError: No module named 'schema_validation'
+test	Run tests	2025-08-24T04:07:52.9895457Z =========================== short test summary info ============================
+test	Run tests	2025-08-24T04:07:52.9895734Z ERROR tests/test_engine.py
+test	Run tests	2025-08-24T04:07:52.9896057Z ERROR tests/test_export_script.py
+test	Run tests	2025-08-24T04:07:52.9896382Z ERROR tests/test_pipeline.py
+test	Run tests	2025-08-24T04:07:52.9896605Z ERROR tests/test_pop_last_exchange.py
+test	Run tests	2025-08-24T04:07:52.9896839Z ERROR tests/test_review.py
+test	Run tests	2025-08-24T04:07:52.9897040Z ERROR tests/test_session_cli.py
+test	Run tests	2025-08-24T04:07:52.9897257Z ERROR tests/test_session_metadata.py
+test	Run tests	2025-08-24T04:07:52.9897483Z ERROR tests/test_session_search.py
+test	Run tests	2025-08-24T04:07:52.9897708Z ERROR tests/test_thread_index_ops.py
+test	Run tests	2025-08-24T04:07:52.9898083Z ERROR tests/test_thread_persistence.py
+test	Run tests	2025-08-24T04:07:52.9898388Z !!!!!!!!!!!!!!!!!!! Interrupted: 10 errors during collection !!!!!!!!!!!!!!!!!!!
+test	Run tests	2025-08-24T04:07:53.0299321Z ##[error]Process completed with exit code 2.
+test	Post Checkout code	﻿2025-08-24T04:07:53.0391388Z Post job cleanup.
+test	Post Checkout code	2025-08-24T04:07:53.1351883Z [command]/usr/bin/git version
+test	Post Checkout code	2025-08-24T04:07:53.1393875Z git version 2.51.0
+test	Post Checkout code	2025-08-24T04:07:53.1439630Z Temporarily overriding HOME='/home/runner/work/_temp/18cacb8b-52e8-4af4-80bc-c053ed4e8381' before making global git config changes
+test	Post Checkout code	2025-08-24T04:07:53.1440981Z Adding repository directory to the temporary git global config as a safe directory
+test	Post Checkout code	2025-08-24T04:07:53.1446263Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/babbel-demo/babbel-demo
+test	Post Checkout code	2025-08-24T04:07:53.1484720Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Post Checkout code	2025-08-24T04:07:53.1519561Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Post Checkout code	2025-08-24T04:07:53.1754269Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Post Checkout code	2025-08-24T04:07:53.1778194Z http.https://github.com/.extraheader
+test	Post Checkout code	2025-08-24T04:07:53.1792236Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test	Post Checkout code	2025-08-24T04:07:53.1827376Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Complete job	﻿2025-08-24T04:07:53.2191179Z Cleaning up orphan processes
