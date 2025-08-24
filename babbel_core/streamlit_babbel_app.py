@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import json
 
-from babbel_core.pipeline import run_pipeline
+from pipeline import run_pipeline
 from babbel_core.memory_tracker import log_interaction, get_recent_emotions
 from babbel_core.intent_classifier import classify_intent
 from babbel_core.emotion_classifier import classify_emotion
