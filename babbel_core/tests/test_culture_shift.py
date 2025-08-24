@@ -1,5 +1,5 @@
 import unittest
-from babbel_core.core.culture_shift import apply_and_explain, _soften_imperatives
+from core.culture_shift import apply_and_explain, _soften_imperatives
 
 class TestCultureShift(unittest.TestCase):
     def test_soften(self):

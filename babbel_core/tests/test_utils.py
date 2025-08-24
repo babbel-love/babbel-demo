@@ -2,7 +2,7 @@ import sys; sys.path.insert(0, "babbel_core")
 import sys; sys.path.insert(0, "babbel_core")
 import sys; sys.path.insert(0, ".")
 import sys; sys.path.insert(0, ".")
-from babbel_core.core.utils import slugify, safe_read_json, safe_write_json
+from core.utils import slugify, safe_read_json, safe_write_json
 import tempfile, os, json
 
 def test_slugify_basic():

@@ -1,4 +1,4 @@
-from babbel_core.engine import BabbelEngine
+from core.engine import BabbelEngine
 import unittest
 
 class TestOrchestratorUX(unittest.TestCase):

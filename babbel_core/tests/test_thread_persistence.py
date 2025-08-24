@@ -1,4 +1,4 @@
-from babbel_core.thread import SessionStore
+from core.thread import SessionStore
 
 def test_thread_save_load(tmp_path):
     store = SessionStore()

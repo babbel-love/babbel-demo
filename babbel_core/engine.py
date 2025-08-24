@@ -1,7 +1,7 @@
-from babbel_core.prompt_builder import build_messages
-from babbel_core.core.protocol_guard import enforce_protocol_guard
-from babbel_core.core.memory_tracker import attach_memory_anchor
-from babbel_core.core.pipeline import run_pipeline
+from core.prompt_builder import build_messages
+from core.protocol_guard import enforce_protocol_guard
+from core.memory_tracker import attach_memory_anchor
+from core.pipeline import run_pipeline
 
 class BabbelEngine:
     def __init__(self):

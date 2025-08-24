@@ -1,5 +1,5 @@
 import unittest
-from babbel_core.core.hx_engine import build_extras, compose_brief
+from core.hx_engine import build_extras, compose_brief
 
 class TestHXEngine(unittest.TestCase):
     def test_build_and_compose(self):

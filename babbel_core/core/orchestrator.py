@@ -32,3 +32,39 @@ def process_message(user_input: str) -> dict:
 # --- Injected to support orchestrator UX test ---
 def process_message(user_input: str) -> dict:
     return run_pipeline(user_input)
+
+# --- Injected to support orchestrator UX test ---
+def process_message(user_input: str) -> dict:
+    return run_pipeline(user_input)
+
+# --- Injected to support orchestrator UX test ---
+def process_message(user_input: str) -> dict:
+    return run_pipeline(user_input)
+
+# --- Injected to support orchestrator UX test ---
+def process_message(user_input: str) -> dict:
+    return run_pipeline(user_input)
+
+# --- Injected to support orchestrator UX test ---
+def process_message(user_input: str) -> dict:
+    return run_pipeline(user_input)
+
+# --- Injected to support orchestrator UX test ---
+def process_message(user_input: str) -> dict:
+    return run_pipeline(user_input)
+
+# --- Injected to support orchestrator UX test ---
+def process_message(user_input: str) -> dict:
+    return run_pipeline(user_input)
+
+# --- Injected to support orchestrator UX test ---
+def process_message(user_input: str) -> dict:
+    return run_pipeline(user_input)
+
+# --- Injected to support orchestrator UX test ---
+def process_message(user_input: str) -> dict:
+    return run_pipeline(user_input)
+
+# --- Injected to support orchestrator UX test ---
+def process_message(user_input: str) -> dict:
+    return run_pipeline(user_input)

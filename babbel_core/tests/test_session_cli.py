@@ -1,5 +1,5 @@
-from babbel_core.thread import SessionStore, ConversationThread
-from babbel_core.core.schema import validate_thread_dict
+from core.thread import SessionStore, ConversationThread
+from core.schema import validate_thread_dict
 
 def test_thread_addition():
     t = ConversationThread("cli", "openrouter/auto", 0.0, 10)

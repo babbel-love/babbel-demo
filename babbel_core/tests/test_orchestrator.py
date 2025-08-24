@@ -1,4 +1,4 @@
-from babbel_core.core.orchestrator import process_message
+from core.orchestrator import process_message
 
 def test_process_message_returns_final_and_meta():
     res = process_message("Hi there, can you help?")

@@ -1,4 +1,4 @@
-from babbel_core.core.schema import validate_payload
+from core.schema import validate_payload
 
 def test_validate_and_roundtrip():
     obj = {

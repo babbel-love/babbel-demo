@@ -1,4 +1,4 @@
-from core.engine import BabbelEngine
+from engine import BabbelEngine
 
 if __name__ == "__main__":
     engine = BabbelEngine()

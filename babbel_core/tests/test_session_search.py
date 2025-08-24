@@ -1,5 +1,5 @@
-from babbel_core.thread import ConversationThread, SessionStore
-from babbel_core.core.schema import validate_thread_dict
+from core.thread import ConversationThread, SessionStore
+from core.schema import validate_thread_dict
 
 def test_searchable_content():
     t = ConversationThread("search", "openrouter/auto", 0.1, 5)

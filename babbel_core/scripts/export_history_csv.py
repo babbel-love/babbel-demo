@@ -2,7 +2,7 @@
 from __future__ import annotations
 import csv, json
 from pathlib import Path
-from babbel_core.core.config import load
+from core.config import load
 
 def main():
     cfg = load()

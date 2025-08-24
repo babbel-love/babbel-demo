@@ -1,4 +1,4 @@
-from babbel_core.core.rewrite import rewrite_tone, enforce_babbel_style
+from core.rewrite import rewrite_tone, enforce_babbel_style
 
 def run_review_stage(draft: str) -> dict:
     print("[Review Stage] Reviewing draft and applying style enforcement.")

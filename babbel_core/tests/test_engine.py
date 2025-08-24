@@ -1,4 +1,4 @@
-from babbel_core.engine import BabbelEngine
+from core.engine import BabbelEngine
 
 def test_engine_responds():
     engine = BabbelEngine()

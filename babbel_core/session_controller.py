@@ -1,4 +1,4 @@
-from core.session_state import SessionState
+from session_state import SessionState
 
 class SessionController:
     def __init__(self):

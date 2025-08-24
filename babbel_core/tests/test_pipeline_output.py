@@ -1,5 +1,5 @@
 import unittest
-from babbel_core.core.pipeline import run_pipeline
+from core.pipeline import run_pipeline
 
 class TestPipelineOutput(unittest.TestCase):
     def test_pipeline_structure(self):

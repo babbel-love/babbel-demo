@@ -1,4 +1,4 @@
-from babbel_core.core.pipeline import run_pipeline
+from core.pipeline import run_pipeline
 
 def main():
     print("Babbel Pipeline Runner (no GUI)")

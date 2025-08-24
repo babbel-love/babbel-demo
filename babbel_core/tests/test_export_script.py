@@ -1,4 +1,4 @@
-from babbel_core.thread import ConversationThread
+from core.thread import ConversationThread
 import tempfile
 from pathlib import Path
 

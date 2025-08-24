@@ -1,5 +1,5 @@
 import unittest
-from babbel_core.core.orchestrator import process_message
+from core.orchestrator import process_message
 
 class TestOrchestratorFallback(unittest.TestCase):
     def test_fallback_path_runs(self):
