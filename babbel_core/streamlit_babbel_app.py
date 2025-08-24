@@ -3,9 +3,9 @@ import os
 import json
 
 from pipeline import run_pipeline
-from babbel_core.memory_tracker import log_interaction, get_recent_emotions
-from babbel_core.intent_classifier import classify_intent
-from babbel_core.emotion_classifier import classify_emotion
+from memory_tracker import log_interaction, get_recent_emotions
+from intent_classifier import classify_intent
+from emotion_classifier import classify_emotion
 from babbel_core.node_rules import apply_node_rules
 
 # ========== Page Config ==========
