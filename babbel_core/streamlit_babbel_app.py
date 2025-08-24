@@ -1,17 +1,25 @@
 import json
-import os
+import os, requests
 import streamlit as st
-from babbel_core.core.orchestrator import Orchestrator
-from memory_tracker import log_interaction, get_recent_emotions
 
-engine = Orchestrator()
+HARD_CODED_API_KEY = os.getenv("OPENROUTER_API_KEY","")
+
+from babbel_core.rewrite import rewrite_tone, enforce_babbel_style
+def babbelize(txt: str) -> str:
+    try:
+        return enforce_babbel_style(rewrite_tone(txt)).strip()
+    except Exception:
+        return txt
 
 def load_speech():
-    with open("speech_protocols.json", encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        with open("speech_protocols.json", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
 SPEECH = load_speech()
 
-def quick_protocol(msg):
+def quick_protocol(msg: str):
     t = msg.lower().strip()
     if any(x in t for x in ("hi", "hello", "hey")) and "greeting" in SPEECH:
         return SPEECH["greeting"]
@@ -23,14 +31,17 @@ def quick_protocol(msg):
         return SPEECH["farewell"]
     return None
 
-st.set_page_config(page_title="Babbel Core", page_icon="🧠", layout="centered")
-st.title("🧠 Babbel Core")
-st.caption("Full pipeline with emotional memory and tone enforcement")
+from babbel_core.memory_tracker import log_interaction, get_recent_emotions
+
+st.set_page_config(page_title="Babbel Core — Streamlit (OpenRouter)", page_icon="🧠", layout="centered")
+st.title("🧠 Babbel Core — Streamlit + OpenRouter")
+st.caption("Original memory protocol: full session chat with a context-size slider.")
 
 st.sidebar.header("Model & Memory")
 model = st.sidebar.text_input("Model ID", value="openrouter/auto")
 temperature = st.sidebar.slider("Temperature", 0.0, 1.5, 0.3, 0.1)
-context_turns = st.sidebar.slider("Context turns", 1, 30, 10, 1)
+context_turns = st.sidebar.slider("Context turns (last N exchanges)", 1, 30, 10, 1)
+use_babbel_style = st.sidebar.checkbox("Apply Babbel style", value=True)
 show_context_preview = st.sidebar.checkbox("Show context preview", value=False)
 
 col1, col2 = st.sidebar.columns(2)
@@ -40,13 +51,16 @@ with col1:
         st.rerun()
 with col2:
     if st.button("Load greetings"):
-        greeting = SPEECH.get("greeting", "Hi—how can I help?")
+        greeting = SPEECH.get("greeting") or "Hi—how can I help?"
         st.session_state.setdefault("messages", []).append({"role": "assistant", "content": greeting})
         st.rerun()
 
+st.sidebar.markdown("---")
+st.sidebar.info("API key is hardcoded in this script. Do not share this file.")
+
 st.sidebar.header("🧭 Emotional Trajectory")
 recent = get_recent_emotions(10)
-st.sidebar.write(", ".join(recent[-10:]) if recent else "No history yet")
+st.sidebar.write(", ".join(recent[-10:]) if recent else "No history yet — start chatting below.")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -54,6 +68,48 @@ if "messages" not in st.session_state:
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
+
+OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
+
+SYSTEM_PROMPT = (
+    "You are Babbel. Respond concisely, concretely, and without filler. "
+    "Be direct, specific, and pragmatic. Avoid hedges like 'maybe'/'just'. "
+    "When helpful, provide short steps or a crisp summary. "
+    "If the user asks for recent facts, be explicit about uncertainty."
+)
+
+def build_messages_with_context(history, n_pairs: int):
+    msgs = [{"role": "system", "content": SYSTEM_PROMPT}]
+    tail = history[-(n_pairs*2):] if n_pairs > 0 else history
+    for m in tail:
+        role = m.get("role", "user")
+        content = str(m.get("content", ""))[:4000]
+        if role not in ("user", "assistant", "system"):
+            role = "user"
+        msgs.append({"role": role, "content": content})
+    return msgs
+
+def call_openrouter(messages):
+    headers = {
+        "Authorization": f"Bearer {HARD_CODED_API_KEY}",
+        "Content-Type": "application/json",
+        "X-Title": "Babbel Core (Streamlit)",
+        "HTTP-Referer": "http://localhost:8501/",
+    }
+    payload = {
+        "model": model,
+        "messages": messages,
+        "temperature": temperature,
+    }
+    resp = requests.post(OPENROUTER_URL, headers=headers, json=payload, timeout=90)
+    if resp.status_code >= 400:
+        try:
+            detail = resp.json()
+        except Exception:
+            detail = {"error": resp.text}
+        raise RuntimeError(f"OpenRouter error {resp.status_code}: {detail}")
+    data = resp.json()
+    return data["choices"][0]["message"]["content"]
 
 prompt = st.chat_input("Type your message…")
 
@@ -63,34 +119,24 @@ if prompt:
         st.markdown(prompt)
 
     quick = quick_protocol(prompt)
-    if quick:
+    if quick is not None:
         assistant_text = quick
     else:
-        thread_dict = {
-            "messages": st.session_state.messages,
-            "model": model,
-            "temperature": temperature,
-            "memory_messages_number": context_turns
-        }
-
+        messages_for_api = build_messages_with_context(st.session_state.messages, context_turns)
         if show_context_preview:
-            st.expander("Context preview").json(thread_dict)
-
-        response = engine.send_thread(thread_dict)
-        assistant_text = response["text"]
+            st.expander("Context preview").json(messages_for_api)
+        try:
+            llm_text = call_openrouter(messages_for_api)
+            assistant_text = babbelize(llm_text) if use_babbel_style else llm_text
+        except Exception as e:
+            assistant_text = f"⚠️ Error: {e}"
 
     st.session_state.messages.append({"role": "assistant", "content": assistant_text})
     with st.chat_message("assistant"):
         st.markdown(assistant_text)
 
     try:
-        log_interaction(
-            prompt,
-            response.get("metadata", {}).get("emotion", "n/a"),
-            response.get("metadata", {}).get("intent", "n/a"),
-            "orchestrator",
-            assistant_text
-        )
+        log_interaction(prompt, "n/a", "n/a", "openrouter", assistant_text)
     except Exception:
         pass
 
@@ -99,25 +145,3 @@ if prompt:
         st.sidebar.write(", ".join(get_recent_emotions(5)))
     except Exception:
         pass
-
-st.markdown("---")
-
-from session_controls import save_current_session, list_saved_sessions, load_session
-
-col1, col2 = st.sidebar.columns(2)
-with col1:
-    if st.button("New session"):
-        st.session_state["messages"] = []
-        st.session_state["session_id"] = str(uuid.uuid4().hex)
-        st.rerun()
-with col2:
-    if st.button("Save"):
-        save_current_session()
-
-saved = list_saved_sessions()
-if saved:
-    st.sidebar.subheader("Load previous session")
-    selected = st.sidebar.selectbox("Pick a session", saved, index=0)
-    if st.sidebar.button("Load"):
-        load_session(selected)
-        st.rerun()
