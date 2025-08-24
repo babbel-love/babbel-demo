@@ -1,78 +1,48 @@
-import streamlit as st
 import os
-import json
+import streamlit as st
 
-from pipeline import run_pipeline
-from memory_tracker import log_interaction, get_recent_emotions
-from intent_classifier import classify_intent
-from emotion_classifier import classify_emotion
-from babbel_core.node_rules import apply_node_rules
+# Import Babbel engine pieces via robust shim (works locally & in Cloud)
+from _import_shim import run_pipeline, rewrite_tone, enforce_babbel_style
 
-# ========== Page Config ==========
-st.set_page_config(page_title="Babbel", layout="centered", page_icon="🧠")
-st.title("🧠 Babbel Chat (Streamlit)")
-st.caption("Real-time protocol-aware assistant with emotion & intent memory")
+st.set_page_config(page_title="Babbel GUI", page_icon="🧠", layout="centered")
+st.title("🧠 Babbel — Core GUI")
 
-# ========== Sidebar ==========
-st.sidebar.header("Settings")
+# Optional: show key status
+api_key = os.getenv("OPENROUTER_API_KEY", "")
+st.caption("OpenRouter key loaded: " + ("✅" if bool(api_key) else "⚠️ missing"))
 
-model_id = st.sidebar.text_input("Model", value="openrouter/auto")
-temperature = st.sidebar.slider("Temperature", 0.0, 1.5, 0.3, 0.1)
-context_turns = st.sidebar.slider("Context turns", 1, 30, 10)
+with st.form("babbel_form", clear_on_submit=False):
+    user = st.text_area("Say something to Babbel:", height=120, placeholder="I feel stuck…")
+    submitted = st.form_submit_button("Run Babbel")
 
-use_babbel_style = st.sidebar.checkbox("Babbel Style", value=True)
-show_metadata = st.sidebar.checkbox("Show Emotion/Intent", value=True)
+if submitted and user.strip():
+    with st.spinner("Thinking…"):
+        out = run_pipeline(user.strip())
 
-st.sidebar.markdown("---")
-st.sidebar.subheader("Recent Emotions")
-recent = get_recent_emotions(8)
-st.sidebar.write(", ".join(recent) if recent else "No history yet")
+    # Safe fallbacks for different pipeline return shapes
+    final_text = (
+        out.get("final_text")
+        or out.get("text")
+        or str(out)
+    )
+    st.subheader("Reply")
+    st.write(final_text)
 
-# ========== Session State ==========
-if "messages" not in st.session_state:
-    st.session_state.messages = []  # [{role, content, emotion, intent}]
+    meta = out.get("metadata") or {}
+    ux = out.get("ux") or {}
 
-# ========== Chat History Display ==========
-for msg in st.session_state.messages:
-    with st.chat_message(msg["role"]):
-        st.markdown(msg["content"])
-        if show_metadata and msg["role"] == "assistant":
-            st.caption(f"Emotion: **{msg.get('emotion','?')}** | Intent: **{msg.get('intent','?')}**")
+    if meta:
+        st.subheader("Metadata")
+        st.json(meta)
+    if ux:
+        st.subheader("UX")
+        st.json(ux)
 
-# ========== Input Box ==========
-user_input = st.chat_input("Type your message...")
-
-if user_input:
-    # User message
-    st.session_state.messages.append({"role": "user", "content": user_input})
-    with st.chat_message("user"):
-        st.markdown(user_input)
-
-    # Run Babbel
-    reply_text = run_pipeline(user_input)
-
-    # Classify metadata
-    emotion = classify_emotion(user_input)
-    intent = classify_intent(user_input)
-    final_reply = apply_node_rules(user_input, emotion, intent)
-
-    # Assistant message
-    reply_block = {
-        "role": "assistant",
-        "content": final_reply,
-        "emotion": emotion,
-        "intent": intent
-    }
-
-    st.session_state.messages.append(reply_block)
-
-    with st.chat_message("assistant"):
-        st.markdown(final_reply)
-        if show_metadata:
-            st.caption(f"Emotion: **{emotion}** | Intent: **{intent}**")
-
-    # Log interaction
+    # Show enforced Babbel tone preview
     try:
-        log_interaction(user_input, emotion, intent, "pipeline", final_reply)
-    except:
+        styled = enforce_babbel_style(rewrite_tone(final_text)).strip()
+        if styled and styled != final_text:
+            st.subheader("Babbel Style (enforced)")
+            st.write(styled)
+    except Exception:
         pass
