@@ -1,377 +1,277 @@
-# babbel_core/streamlit_babbel_app.py
-import os, json, csv, requests, math
+import os, json, csv, glob, uuid
 from datetime import datetime
-from pathlib import Path
+from typing import List, Dict, Any, Optional
+
+import requests
 import streamlit as st
 
-# --- Optional local style helpers ---
-try:
-    from rewrite import rewrite_tone, enforce_babbel_style
-    def babbelize(txt: str) -> str:
-        try:
-            return enforce_babbel_style(rewrite_tone(txt)).strip()
-        except Exception:
-            return txt
-except Exception:
-    def babbelize(txt: str) -> str:
-        return txt
-
-# --- Local classifiers & node guidance ---
-try:
-    from intent_classifier import classify_intent
-except Exception:
-    def classify_intent(_): return "explore"
-
-try:
-    from emotion_classifier import classify_emotion
-except Exception:
-    def classify_emotion(_): return "mixed"
-
-try:
-    from node_rules import apply_node_rules
-except Exception:
-    def apply_node_rules(_t,_e,_i): return ""
-
-# --- Optional speech protocols ---
-def _load_json_file(path):
-    try:
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
-    except Exception:
-        return {}
-
-SPEECH = _load_json_file(str(Path(__file__).with_name("speech_protocols.json")))
-
-def quick_protocol(msg: str):
-    t = msg.lower().strip()
-    if any(x in t for x in ("hi", "hello", "hey")) and "greeting" in SPEECH:
-        return SPEECH["greeting"]
-    if "help" in t and "help" in SPEECH:
-        return SPEECH["help"]
-    if "thanks" in t and "thank" in t and "thanks" in SPEECH:
-        return SPEECH["thanks"]
-    if any(x in t for x in ("bye", "goodbye", "later")) and "farewell" in SPEECH:
-        return SPEECH["farewell"]
-    return None
-
-# --- Config & constants ---
-st.set_page_config(page_title="Babbel Core — Streamlit (OpenRouter)", page_icon="🧠", layout="centered")
-
+APP_TITLE = "🧠 Babbel Core — Streamlit + OpenRouter"
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-HARD_CODED_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
+SESSIONS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "sessions"))
+os.makedirs(SESSIONS_DIR, exist_ok=True)
+
 SYSTEM_PROMPT = (
     "You are Babbel. Respond concisely, concretely, and without filler. "
-    "Be direct, specific, and pragmatic. Avoid hedges like 'maybe'/'just'. "
-    "When helpful, provide short steps or a crisp summary. "
+    "Be direct, specific, and pragmatic. Avoid hedges like 'maybe' or 'just'. "
     "If the user asks for recent facts, be explicit about uncertainty."
 )
 
-SESSIONS_DIR = Path("sessions"); SESSIONS_DIR.mkdir(exist_ok=True)
+def _env(n: str, d: str = "") -> str: return os.getenv(n, d)
+def _env_key() -> str: return _env("OPENROUTER_API_KEY")
+def _env_site() -> str: return _env("OPENROUTER_SITE_URL", "http://localhost:8501").rstrip("/")
+def _env_title() -> str: return _env("OPENROUTER_APP_TITLE", "Babbel Local Dev")
 
-EMOTION_SCORE = {
-    "shame": -2.0, "grief": -1.5, "anger": -1.0, "fear": -0.5,
-    "mixed": 0.0, "curious": 0.25, "wonder": 0.5, "relief": 1.0, "calm": 1.25
-}
+# ---- Optional imports with fallbacks ----
+try:
+    from rewrite import rewrite_tone, enforce_babbel_style  # type: ignore
+    def babbelize(txt: str) -> str:
+        try: return enforce_babbel_style(rewrite_tone(txt)).strip()
+        except Exception: return txt
+except Exception:
+    def babbelize(txt: str) -> str: return txt
 
-def emotion_to_value(label: str) -> float:
-    return EMOTION_SCORE.get(label, 0.0)
+try:
+    from intent_classifier import classify_intent  # type: ignore
+except Exception:
+    def classify_intent(text: str) -> str: return "explore"
 
-def friendly_title_from_first_user(messages):
-    for m in messages:
-        if m.get("role") == "user":
-            words = str(m.get("content","")).strip().split()
-            return (" ".join(words[:8]) or "Untitled").strip().rstrip(".")[:60]
-    return "Untitled"
+try:
+    from emotion_classifier import classify_emotion  # type: ignore
+except Exception:
+    def classify_emotion(text: str) -> str: return "mixed"
 
-def build_messages_with_context(history, n_pairs: int):
+try:
+    from node_rules import apply_node_rules  # type: ignore
+except Exception:
+    def apply_node_rules(text, emotion, intent): return "Let’s slow this down together and see what’s really here."
+
+try:
+    from memory_tracker import log_interaction, get_recent_emotions  # type: ignore
+except Exception:
+    def log_interaction(*args, **kwargs): pass
+    def get_recent_emotions(n=10): return []
+
+try:
+    from thread import ConversationThread  # type: ignore
+except Exception:
+    class ConversationThread:
+        def __init__(self, thread_name, model, temperature, memory_messages_number):
+            self.thread_name = thread_name
+            self.model = model
+            self.temperature = float(temperature)
+            self.memory_messages_number = int(memory_messages_number)
+            self.messages = []
+            self.thread_id = uuid.uuid4().hex
+        def to_dict(self): return self.__dict__
+        @classmethod
+        def from_dict(cls, data):
+            obj = cls(
+                data.get("thread_name","Untitled"),
+                data.get("model","openrouter/auto"),
+                data.get("temperature",0.0),
+                data.get("memory_messages_number",10),
+            )
+            obj.messages = data.get("messages",[])
+            obj.thread_id = data.get("thread_id") or obj.thread_id
+            return obj
+        def save(self, directory):
+            os.makedirs(directory, exist_ok=True)
+            with open(os.path.join(directory, f"{self.thread_id}.json"), "w", encoding="utf-8") as f:
+                json.dump(self.to_dict(), f, ensure_ascii=False, indent=2)
+        @classmethod
+        def load(cls, path):
+            with open(path, "r", encoding="utf-8") as f:
+                return cls.from_dict(json.load(f))
+
+def _key_status_badge():
+    key = _env_key()
+    if key.startswith("sk-or-") and len(key) > 20: st.sidebar.success("API key detected in env.")
+    else: st.sidebar.error("No API key in env. Start app with OPENROUTER_API_KEY set.")
+
+def _build_messages(history: List[Dict[str, Any]], n_pairs: int) -> List[Dict[str, Any]]:
     msgs = [{"role": "system", "content": SYSTEM_PROMPT}]
     tail = history[-(n_pairs*2):] if n_pairs > 0 else history
     for m in tail:
         role = m.get("role", "user")
-        content = m.get("content", "")
-        if role not in ("user","assistant","system"):
-            role = "user"
-        msgs.append({"role": role, "content": str(content)[:4000]})
+        content = str(m.get("content", ""))[:4000]
+        if role not in ("user", "assistant", "system"): role = "user"
+        msgs.append({"role": role, "content": content})
     return msgs
 
-def call_openrouter(model: str, temperature: float, messages):
+def _call_openrouter(model: str, temperature: float, messages: List[Dict[str, Any]]) -> str:
+    key = _env_key()
     headers = {
-        "Authorization": f"Bearer {HARD_CODED_API_KEY}",
+        "Authorization": f"Bearer {key}",
         "Content-Type": "application/json",
-        "X-Title": "Babbel Core (Streamlit)",
-        "HTTP-Referer": "http://localhost:8501/",
+        "Referer": _env_site(),
+        "Origin": _env_site(),
+        "X-Title": _env_title(),
     }
-    payload = {"model": model, "messages": messages, "temperature": temperature}
-    try:
-        resp = requests.post(OPENROUTER_URL, headers=headers, json=payload, timeout=90)
-    except requests.exceptions.Timeout as e:
-        raise RuntimeError("OpenRouter error 408: Request timeout. Try again.") from e
-    except requests.exceptions.RequestException as e:
-        raise RuntimeError(f"Network error: {e}") from e
+    payload = {"model": model, "messages": messages, "temperature": float(temperature)}
+    r = requests.post(OPENROUTER_URL, headers=headers, json=payload, timeout=90)
+    if r.status_code >= 400:
+        try: detail = r.json()
+        except Exception: detail = {"error": r.text}
+        raise RuntimeError(f"OpenRouter error {r.status_code}: {json.dumps(detail)[:300]}")
+    data = r.json()
+    try: return data["choices"][0]["message"]["content"]
+    except Exception: raise RuntimeError(f"Unexpected API response shape: {json.dumps(data)[:300]}")
 
-    if resp.status_code >= 400:
-        body = resp.text or ""
-        try:
-            body = json.dumps(resp.json())
-        except Exception:
-            pass
-        snippet = (body[:300] + ("…" if len(body) > 300 else ""))
-        hint = ""
-        if resp.status_code in (408,429) or 500 <= resp.status_code < 600:
-            hint = " Hint: retry in a few seconds."
-        raise RuntimeError(f"OpenRouter error {resp.status_code}: {snippet}{hint}")
-    data = resp.json()
-    try:
-        return data["choices"][0]["message"]["content"]
-    except Exception:
-        raise RuntimeError(f"Unexpected API response shape: {data}")
-
-def cultural_shift_explanation(user_text: str, assistant_text: str, style_applied: bool) -> str:
+def _cultural_shift_explanation(user_text: str, assistant_text: str, style_applied: bool) -> str:
+    if not style_applied: return "Cultural Shift Compensation is off."
     u = user_text.lower(); a = assistant_text.lower()
-    softened = any(w in u for w in ["maybe","just","kinda","sort of"])
-    direct = any(w in a for w in ["do this","use","must","next"])
-    if style_applied and softened and direct:
-        return "Tightened hedged phrasing and delivered a more direct, low-context answer."
-    if style_applied and not softened:
-        return "Kept your direct tone; removed filler to match Babbel style."
-    if not style_applied and softened:
-        return "Maintained your softer tone without enforcing directness."
-    return "No notable cultural shift detected."
+    if any(w in u for w in ("maybe","just","kinda","sort of")) and not any(w in a for w in ("maybe","just","kinda","sort of")):
+        return "Softened/hedged phrasing was normalized to direct language to avoid misinterpretation across cultures."
+    return "No cultural shifts detected beyond tone normalization."
 
-def ensure_state():
-    st.session_state.setdefault("messages", [])
-    st.session_state.setdefault("meta_rows", [])   # one per assistant turn
-    st.session_state.setdefault("emotion_series", [])  # numeric sparkline
+def _emotion_to_value(label: str) -> int:
+    return {"shame":-2,"grief":-1,"fear":-1,"anger":0,"mixed":0,"wonder":1}.get(label,0)
 
-ensure_state()
+def _session_files() -> List[str]: return sorted(glob.glob(os.path.join(SESSIONS_DIR, "*.json")))
+def _load_session(path: str) -> "ConversationThread": return ConversationThread.load(path)
+def _save_session(ct: "ConversationThread"): ct.save(SESSIONS_DIR)
 
-# --- Title & Caption ---
-st.title("🧠 Babbel Core — Streamlit + OpenRouter")
-st.caption("Production-tuned chat with metadata, cultural shift notes, session persistence, and a mini emotion sparkline.")
+def _export_csv(ct: "ConversationThread", path_csv: str):
+    rows=[]
+    for m in ct.messages:
+        md=m.get("metadata",{})
+        rows.append({
+            "timestamp":m.get("timestamp",""),
+            "role":m.get("role",""),
+            "content":m.get("content",""),
+            "intent":md.get("intent",""),
+            "emotion":md.get("emotion",""),
+            "node_guidance":md.get("node_guidance",""),
+            "style_applied":md.get("style_applied",False),
+            "cultural_shift_explanation":md.get("cultural_shift_explanation",""),
+        })
+    with open(path_csv,"w",newline="",encoding="utf-8") as f:
+        writer=csv.DictWriter(f,fieldnames=list(rows[0].keys()) if rows else [
+            "timestamp","role","content","intent","emotion","node_guidance","style_applied","cultural_shift_explanation"
+        ])
+        writer.writeheader()
+        for r in rows: writer.writerow(r)
 
-# === Sidebar ===
+st.set_page_config(page_title="Babbel Core — Streamlit (OpenRouter)", page_icon="🧠", layout="centered")
+st.title(APP_TITLE)
+st.caption("OpenRouter-backed chat with Babbel style, cultural shift notes, session persistence, and an emotion sparkline.")
+
 st.sidebar.header("Model & Memory")
 model = st.sidebar.text_input("Model ID", value="openrouter/auto")
-temperature = st.sidebar.slider("Temperature", 0.0, 1.5, 0.3, 0.1)
-context_turns = st.sidebar.slider("Context turns (last N exchanges)", 1, 30, 10, 1)
-use_babbel_style = st.sidebar.checkbox("Apply Babbel style", value=True)
-use_culture_shift = st.sidebar.checkbox("Cultural Shift Compensation", value=True)
-show_context_preview = st.sidebar.checkbox("Show context preview", value=False)
+temperature = st.sidebar.slider("Temperature",0.0,1.5,0.3,0.1)
+context_turns = st.sidebar.slider("Context turns (last N exchanges)",1,30,10,1)
+use_babbel_style = st.sidebar.checkbox("Apply Babbel style",True)
+apply_cultural_shift = st.sidebar.checkbox("Cultural Shift Compensation",True)
+show_context_preview = st.sidebar.checkbox("Show context preview",False)
 
-# Ping
-if st.sidebar.button("Ping OpenRouter"):
+st.sidebar.markdown("---"); _key_status_badge()
+
+def _ping():
     try:
-        _ = call_openrouter(model, 0.0, [
-            {"role":"system","content":"You are a minimal responder."},
-            {"role":"user","content":"Say Pong."}
-        ])
+        _ = _call_openrouter(model,0.0,[{"role":"system","content":"You are a ping probe."},{"role":"user","content":"Reply Pong."}])
         st.sidebar.success("Pong.")
     except Exception as e:
         st.sidebar.error(str(e))
+if st.sidebar.button("Ping OpenRouter"): _ping()
 
-# Sessions
-st.sidebar.markdown("---")
-st.sidebar.subheader("Sessions")
-search = st.sidebar.text_input("Search sessions", "")
-def _list_sessions():
-    items = []
-    for p in sorted(SESSIONS_DIR.glob("*.json"), key=lambda x: x.stat().st_mtime, reverse=True):
-        try:
-            data = json.loads(p.read_text(encoding="utf-8"))
-            title = data.get("thread_name") or p.stem
-        except Exception:
-            title = p.stem
-        if not search or search.lower() in title.lower():
-            items.append((title, p.name))
-    return items
+st.sidebar.markdown("---"); st.sidebar.subheader("Sessions")
+if "thread" not in st.session_state:
+    st.session_state.thread = ConversationThread("Untitled", model, temperature, context_turns)
 
-sess_items = _list_sessions()
-sel_label = st.sidebar.selectbox("Choose", [f"{t}  ·  {f}" for t,f in sess_items] or ["(no sessions)"])
+def _refresh_session_list(): st.session_state.available_sessions = _session_files()
+if "available_sessions" not in st.session_state: _refresh_session_list()
 
-c1,c2,c3,c4,c5 = st.sidebar.columns(5)
-with c1:
+colA,colB,colC,colD = st.sidebar.columns([1,1,1,1],vertical_alignment="center")
+with colA:
     if st.button("New"):
-        st.session_state["messages"] = []
-        st.session_state["meta_rows"] = []
-        st.session_state["emotion_series"] = []
-        st.rerun()
-with c2:
-    if st.button("Save"):
-        title = friendly_title_from_first_user(st.session_state["messages"])
-        payload = {
-            "thread_name": title,
-            "model": model,
-            "temperature": float(temperature),
-            "memory_messages_number": int(context_turns),
-            "messages": st.session_state["messages"],
-            "meta_rows": st.session_state["meta_rows"],
-            "emotion_series": st.session_state["emotion_series"],
-            "saved_at": datetime.utcnow().isoformat()+"Z",
-        }
-        sid = datetime.utcnow().strftime("%Y%m%d-%H%M%S")
-        path = SESSIONS_DIR / f"{sid}.json"
-        path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-        st.sidebar.success(f"Saved: {path.name}")
-with c3:
-    if st.button("Load"):
-        if sess_items:
-            fname = sess_items[[f"{t}  ·  {f}" for t,f in sess_items].index(sel_label)][1]
-            data = json.loads((SESSIONS_DIR/fname).read_text(encoding="utf-8"))
-            st.session_state["messages"] = data.get("messages", [])
-            st.session_state["meta_rows"] = data.get("meta_rows", [])
-            st.session_state["emotion_series"] = data.get("emotion_series", [])
-            st.sidebar.success(f"Loaded {fname}")
-            st.rerun()
-with c4:
-    if st.button("Delete"):
-        if sess_items:
-            fname = sess_items[[f"{t}  ·  {f}" for t,f in sess_items].index(sel_label)][1]
-            try:
-                (SESSIONS_DIR/fname).unlink(missing_ok=True)
-                st.sidebar.success(f"Deleted {fname}")
-                st.rerun()
-            except Exception as e:
-                st.sidebar.error(str(e))
-with c5:
+        st.session_state.thread = ConversationThread("Untitled", model, temperature, context_turns)
+        st.session_state.messages=[]
+with colB:
+    if st.button("Save"): _save_session(st.session_state.thread); _refresh_session_list()
+with colC:
     if st.button("Duplicate"):
-        if sess_items:
-            fname = sess_items[[f"{t}  ·  {f}" for t,f in sess_items].index(sel_label)][1]
-            src = SESSIONS_DIR/fname
-            dst = SESSIONS_DIR/(src.stem + "-copy.json")
+        t=st.session_state.thread
+        clone=ConversationThread((t.thread_name or "Untitled")+" (copy)",t.model,t.temperature,t.memory_messages_number)
+        clone.messages=list(t.messages); _save_session(clone); _refresh_session_list()
+with colD:
+    if st.button("Delete"):
+        for p in _session_files():
             try:
-                dst.write_text(src.read_text(encoding="utf-8"), encoding="utf-8")
-                st.sidebar.success(f"Duplicated to {dst.name}")
-                st.rerun()
-            except Exception as e:
-                st.sidebar.error(str(e))
+                with open(p,"r",encoding="utf-8") as f:
+                    if json.load(f).get("thread_id")==st.session_state.thread.thread_id:
+                        os.remove(p); _refresh_session_list(); st.success("Deleted session."); break
+            except Exception: pass
 
-# Export
-def export_csv(path: Path, messages, meta_rows):
-    headers = ["role","content","intent","emotion","node_guidance","style_applied","cultural_shift_explanation","timestamp"]
-    with path.open("w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(headers)
-        a_meta_iter = iter(meta_rows)
-        for m in messages:
-            intent = m.get("intent","")
-            emotion = m.get("emotion","")
-            node = ""
-            styled = ""
-            shift = ""
-            ts = m.get("ts","")
-            if m.get("role") == "assistant":
-                meta = next(a_meta_iter, {})
-                node = meta.get("node_guidance","")
-                styled = str(meta.get("style_applied", False))
-                shift = meta.get("cultural_shift_explanation","")
-            w.writerow([m.get("role",""), m.get("content",""), intent, emotion, node, styled, shift, ts])
+selected_path = st.sidebar.selectbox("Load session",["(choose)"]+st.session_state.available_sessions)
+if selected_path != "(choose)":
+    try:
+        st.session_state.thread=_load_session(selected_path)
+        st.session_state.messages=st.session_state.thread.messages.copy()
+        st.sidebar.success("Loaded.")
+    except Exception as e:
+        st.sidebar.error(f"Load failed: {e}")
 
-st.sidebar.markdown("---")
-csa, csb = st.sidebar.columns(2)
-with csa:
-    if st.button("Export JSON"):
-        title = friendly_title_from_first_user(st.session_state["messages"])
-        payload = {
-            "thread_name": title,
-            "model": model,
-            "temperature": float(temperature),
-            "memory_messages_number": int(context_turns),
-            "messages": st.session_state["messages"],
-            "meta_rows": st.session_state["meta_rows"],
-            "emotion_series": st.session_state["emotion_series"],
-            "exported_at": datetime.utcnow().isoformat()+"Z",
-        }
-        sid = datetime.utcnow().strftime("%Y%m%d-%H%M%S")
-        path = SESSIONS_DIR / f"{sid}-export.json"
-        path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-        st.sidebar.success(f"JSON exported: {path.name}")
-with csb:
-    if st.button("Export CSV"):
-        sid = datetime.utcnow().strftime("%Y%m%d-%H%M%S")
-        path = SESSIONS_DIR / f"{sid}-export.csv"
-        export_csv(path, st.session_state["messages"], st.session_state["meta_rows"])
-        st.sidebar.success(f"CSV exported: {path.name}")
+st.sidebar.subheader("Export")
+if st.sidebar.button("Export CSV"):
+    out_csv=os.path.join(SESSIONS_DIR,f"{st.session_state.thread.thread_id}.csv")
+    try: _export_csv(st.session_state.thread,out_csv); st.sidebar.success(f"CSV saved: {out_csv}")
+    except Exception as e: st.sidebar.error(f"CSV error: {e}")
+if st.sidebar.button("Export JSON"):
+    try: _save_session(st.session_state.thread); st.sidebar.success("JSON saved.")
+    except Exception as e: st.sidebar.error(f"JSON error: {e}")
 
-# Emotion sparkline (last 20)
-st.sidebar.header("Emotion sparkline")
-try:
-    data = st.session_state["emotion_series"][-20:]
-    st.sidebar.line_chart(data)
-except Exception:
-    st.sidebar.write("No data yet.")
+st.sidebar.header("🧭 Emotion Sparkline")
+def _spark_values():
+    vals=[]
+    for m in st.session_state.thread.messages[-40:]:
+        if m.get("role")=="assistant":
+            emo=m.get("metadata",{}).get("emotion","mixed"); vals.append(_emotion_to_value(emo))
+    return vals[-20:] or [0]
+try: st.sidebar.line_chart(_spark_values())
+except Exception: st.sidebar.write("No data yet.")
 
-# === Chat history render ===
+if "messages" not in st.session_state: st.session_state.messages=[]
 for msg in st.session_state.messages:
-    with st.chat_message(msg.get("role","user")):
+    with st.chat_message(msg.get("role","assistant")):
         st.markdown(msg.get("content",""))
-        if msg.get("role") == "assistant" and msg.get("meta"):
-            meta = msg["meta"]
-            with st.expander("Metadata"):
-                st.write(
-                    f"Intent: **{meta.get('intent','')}** · "
-                    f"Emotion: **{meta.get('emotion','')}** · "
-                    f"Node/Guidance: **{meta.get('node_guidance','')}** · "
-                    f"Style applied: **{meta.get('style_applied', False)}**"
-                )
-                if meta.get("cultural_shift_explanation"):
-                    st.caption(f"Explanation: {meta['cultural_shift_explanation']}")
+        md=msg.get("metadata")
+        if md:
+            with st.expander("Metadata"): st.json(md)
 
-# === Input & turn ===
-st.markdown("---")
-st.caption("Tip: Press Enter to send. Use Shift+Enter for a newline.")
-prompt = st.chat_input("Type your message…")
+def _ensure_title(first_user_text: str):
+    if st.session_state.thread.thread_name=="Untitled":
+        st.session_state.thread.thread_name=(first_user_text or "Untitled")[:60].strip() or "Untitled"
 
+def _append(role: str, content: str, metadata: Optional[Dict[str, Any]]=None):
+    item={"role":role,"content":content,"timestamp":datetime.now().isoformat()}
+    if metadata: item["metadata"]=metadata
+    st.session_state.messages.append(item)
+    st.session_state.thread.messages.append(item)
+
+prompt = st.chat_input("Type your message… (Enter to send, Shift+Enter for newline)")
 if prompt:
-    now = datetime.utcnow().isoformat()+"Z"
-    user_intent = classify_intent(prompt)
-    user_emotion = classify_emotion(prompt)
-    st.session_state.messages.append({"role": "user", "content": prompt, "intent": user_intent, "emotion": user_emotion, "ts": now})
-    with st.chat_message("user"):
-        st.markdown(prompt)
-        st.caption(f"Intent: {user_intent} · Emotion: {user_emotion}")
+    user_intent=classify_intent(prompt); user_emotion=classify_emotion(prompt)
+    _ensure_title(prompt); _append("user",prompt,{"intent":user_intent,"emotion":user_emotion})
 
-    quick = quick_protocol(prompt)
-    if quick is not None:
-        assistant_raw = quick
+    messages_for_api=_build_messages(st.session_state.messages, st.session_state.thread.memory_messages_number)
+    if show_context_preview: st.expander("Context preview").json(messages_for_api)
+
+    assistant_text=""; error_note=None
+    try:
+        llm_text=_call_openrouter(st.session_state.thread.model, st.session_state.thread.temperature, messages_for_api)
+        assistant_text=babbelize(llm_text) if True else llm_text
+    except Exception as e:
+        error_note=str(e)
+        assistant_text=f"⚠️ Error: {error_note}\n\nHint: On 401, ensure your key is a server key or the Site URL exactly matches the key's allowed domain."
+    ai_intent=classify_intent(assistant_text); ai_emotion=classify_emotion(assistant_text)
+    node_guidance=apply_node_rules(assistant_text, ai_emotion, ai_intent)
+    if any(w in prompt.lower() for w in ("maybe","just","kinda","sort of")) and not any(w in assistant_text.lower() for w in ("maybe","just","kinda","sort of")):
+        cshift_expl="Softened/hedged phrasing was normalized to direct language to avoid misinterpretation across cultures."
     else:
-        messages_for_api = build_messages_with_context(st.session_state.messages, context_turns)
-        if show_context_preview:
-            st.expander("Context preview").json(messages_for_api)
-        try:
-            assistant_raw = call_openrouter(model, temperature, messages_for_api)
-        except Exception as e:
-            assistant_raw = f"⚠️ Error: {e}"
-
-    styled_text = babbelize(assistant_raw) if use_babbel_style else assistant_raw
-    a_intent = classify_intent(styled_text)
-    a_emotion = classify_emotion(styled_text)
-    guidance = apply_node_rules(styled_text, a_emotion, a_intent) or ""
-
-    shift_exp = cultural_shift_explanation(prompt, styled_text, bool(use_babbel_style)) if use_culture_shift else ""
-
-    meta = {
-        "intent": a_intent,
-        "emotion": a_emotion,
-        "node_guidance": guidance,
-        "style_applied": bool(use_babbel_style),
-        "cultural_shift_explanation": shift_exp,
-    }
-
-    st.session_state["meta_rows"].append(meta)
-    st.session_state["emotion_series"].append(emotion_to_value(a_emotion))
-
-    st.session_state.messages.append({"role": "assistant", "content": styled_text, "meta": meta, "ts": now})
-    with st.chat_message("assistant"):
-        st.markdown(styled_text)
-        with st.expander("Metadata"):
-            st.write(
-                f"Intent: **{a_intent}** · "
-                f"Emotion: **{a_emotion}** · "
-                f"Node/Guidance: **{guidance}** · "
-                f"Style applied: **{bool(use_babbel_style)}**"
-            )
-            if shift_exp:
-                st.caption(f"Explanation: {shift_exp}")
-
-# Footer (quiet)
-st.markdown(" ")
+        cshift_expl="No cultural shifts detected beyond tone normalization."
+    md={"intent":ai_intent,"emotion":ai_emotion,"node_guidance":node_guidance,"style_applied":True,"cultural_shift_explanation":cshift_expl,"error":error_note}
+    _append("assistant",assistant_text,md)
+    try: log_interaction(prompt, user_emotion, user_intent, "openrouter", assistant_text)
+    except Exception: pass
+    try: st.session_state.thread.save(SESSIONS_DIR)
+    except Exception: pass
