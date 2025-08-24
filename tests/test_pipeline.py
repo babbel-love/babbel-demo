@@ -1,4 +1,5 @@
 import sys; sys.path.insert(0, "babbel_core")
+import sys; sys.path.insert(0, "babbel_core")
 import sys; sys.path.insert(0, ".")
 import sys; sys.path.insert(0, ".")
 from core.pipeline import run

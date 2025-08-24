@@ -1,4 +1,5 @@
 import sys; sys.path.insert(0, "babbel_core")
+import sys; sys.path.insert(0, "babbel_core")
 import sys; sys.path.insert(0, ".")
 import sys; sys.path.insert(0, ".")
 from utils import slugify, safe_read_json, safe_write_json
