@@ -1,8 +1,28 @@
-from __future__ import annotations
 import re
 
-def rewrite_response(text: str) -> str:
-    t = re.sub(r"\b(I think|perhaps|maybe|it seems)\b", "", text, flags=re.IGNORECASE)
-    t = re.sub(r"\b(as an AI|I'm here to help|I hope this helps|I apologize)\b", "", t, flags=re.IGNORECASE)
-    t = re.sub(r"\s{2,}", " ", t)
-    return t.strip()
+_HEDGES = [
+    r"\bjust\b", r"\bmaybe\b", r"\bperhaps\b", r"\bi think\b", r"\bit seems\b",
+    r"\bi feel like\b", r"\bkinda\b", r"\bsort of\b"
+]
+
+_WEAK_PHRASES = [
+    (r"\bthere (is|are)\b\s*", ""),
+    (r"\bit is important to note that\b\s*", ""),
+    (r"\bshould\b", "must"),
+    (r"\butilize\b", "use"),
+    (r"\bcan be\b\s+(\w+)\s+as\b", r"is \1"),
+]
+
+def rewrite_tone(text: str) -> str:
+    out = text
+    for pat in _HEDGES:
+        out = re.sub(pat, "", out, flags=re.IGNORECASE)
+    out = re.sub(r"\s{2,}", " ", out).strip()
+    return out
+
+def enforce_babbel_style(text: str) -> str:
+    out = text
+    for pattern, repl in _WEAK_PHRASES:
+        out = re.sub(pattern, repl, out, flags=re.IGNORECASE)
+    out = re.sub(r"\s{2,}", " ", out).strip()
+    return out
