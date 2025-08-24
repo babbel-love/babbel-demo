@@ -1,0 +1,15 @@
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+dist/
+build/
+*.log
+.DS_Store
+sessions/*.json
+exports/*.csv
+memory_log.json
+.venv/
+.venv/
+.venv/
+.venv/

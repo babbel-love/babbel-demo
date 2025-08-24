@@ -1,0 +1,42 @@
+{"trace_id": "87c05228af49469db18918c37c79ad64", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "87c05228af49469db18918c37c79ad64", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "87c05228af49469db18918c37c79ad64", "step": "context", "elapsed_ms": 0, "count": 0}
+{"trace_id": "87c05228af49469db18918c37c79ad64", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "87c05228af49469db18918c37c79ad64", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "87c05228af49469db18918c37c79ad64", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "87c05228af49469db18918c37c79ad64", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "87c05228af49469db18918c37c79ad64", "step": "node_rules", "elapsed_ms": 0, "line": "Let’s slow this down together and see what’s really here."}
+{"trace_id": "87c05228af49469db18918c37c79ad64", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "87c05228af49469db18918c37c79ad64", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "ffec288afe284f238d6af8942d7de7dd", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "fear", "intent": "seek guidance"}}
+{"trace_id": "ffec288afe284f238d6af8942d7de7dd", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "ffec288afe284f238d6af8942d7de7dd", "step": "context", "elapsed_ms": 0, "count": 1}
+{"trace_id": "ffec288afe284f238d6af8942d7de7dd", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "ffec288afe284f238d6af8942d7de7dd", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "ffec288afe284f238d6af8942d7de7dd", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "ffec288afe284f238d6af8942d7de7dd", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "ffec288afe284f238d6af8942d7de7dd", "step": "node_rules", "elapsed_ms": 0, "line": "I’m with you. We’ll face this carefully — not quickly."}
+{"trace_id": "ffec288afe284f238d6af8942d7de7dd", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "ffec288afe284f238d6af8942d7de7dd", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "ffec288afe284f238d6af8942d7de7dd", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "500bb7eaca0c487c841a992edcee5ae9", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "500bb7eaca0c487c841a992edcee5ae9", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "500bb7eaca0c487c841a992edcee5ae9", "step": "context", "elapsed_ms": 0, "count": 2}
+{"trace_id": "500bb7eaca0c487c841a992edcee5ae9", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "500bb7eaca0c487c841a992edcee5ae9", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "500bb7eaca0c487c841a992edcee5ae9", "step": "rewrite", "elapsed_ms": 0}
+{"trace_id": "500bb7eaca0c487c841a992edcee5ae9", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "500bb7eaca0c487c841a992edcee5ae9", "step": "node_rules", "elapsed_ms": 0, "line": "Let’s slow this down together and see what’s really here."}
+{"trace_id": "500bb7eaca0c487c841a992edcee5ae9", "step": "culture_shift", "elapsed_ms": 0, "target": "jp"}
+{"trace_id": "500bb7eaca0c487c841a992edcee5ae9", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "500bb7eaca0c487c841a992edcee5ae9", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}
+{"trace_id": "9dbb07fe6d9b41ae9c85d1027b99499a", "step": "classify", "elapsed_ms": 0, "out": {"emotion": "mixed", "intent": "explore"}}
+{"trace_id": "9dbb07fe6d9b41ae9c85d1027b99499a", "step": "safety_input", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "9dbb07fe6d9b41ae9c85d1027b99499a", "step": "context", "elapsed_ms": 0, "count": 3}
+{"trace_id": "9dbb07fe6d9b41ae9c85d1027b99499a", "step": "fallback", "elapsed_ms": 0}
+{"trace_id": "9dbb07fe6d9b41ae9c85d1027b99499a", "step": "safety_output", "elapsed_ms": 0, "out": {"blocked": false, "reasons": []}}
+{"trace_id": "9dbb07fe6d9b41ae9c85d1027b99499a", "step": "rewrite", "elapsed_ms": 1}
+{"trace_id": "9dbb07fe6d9b41ae9c85d1027b99499a", "step": "style", "elapsed_ms": 0, "profile": "warm_coach"}
+{"trace_id": "9dbb07fe6d9b41ae9c85d1027b99499a", "step": "node_rules", "elapsed_ms": 0, "line": "Let’s slow this down together and see what’s really here."}
+{"trace_id": "9dbb07fe6d9b41ae9c85d1027b99499a", "step": "memory_log", "elapsed_ms": 0}
+{"trace_id": "9dbb07fe6d9b41ae9c85d1027b99499a", "step": "return", "payload_keys": ["trace_id", "guiding_line", "final_text", "emotion", "intent", "notes", "tokens_used", "timestamp_utc", "safety", "ux"]}

@@ -1,0 +1,18 @@
+name: Weekly Policy Report
+on:
+  schedule:
+    - cron: '20 3 * * 0'
+  workflow_dispatch:
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare report
+        run: |
+          mkdir -p dist
+          bash scripts/deny_scan.sh > dist/scan_report.txt || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weekly-policy-scan
+          path: dist/scan_report.txt
