@@ -1,5 +1,5 @@
-streamlit==1.37.1
-requests>=2.31.0,<3
-pytest>=8.2.0,<9
-# optional, best-effort; app falls back if missing
-streamlit-autorefresh>=1.0.1
+streamlit
+requests
+pytest
+pydantic
+Pillow
