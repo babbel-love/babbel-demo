@@ -1,3 +1,5 @@
+import sys; sys.path.insert(0, ".")
+import sys; sys.path.insert(0, ".")
 import os, tempfile, json
 import importlib.util, sys
 

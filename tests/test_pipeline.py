@@ -1,3 +1,5 @@
+import sys; sys.path.insert(0, ".")
+import sys; sys.path.insert(0, ".")
 from core.pipeline import run
 def test_pipeline_offline_runs():
     import os

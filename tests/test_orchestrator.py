@@ -1,3 +1,5 @@
+import sys; sys.path.insert(0, ".")
+import sys; sys.path.insert(0, ".")
 
 def test_orchestrate_returns_final_and_meta():
     res = orchestrate("Hi there, can you help?", "Maybe I can help. Let's just try a bit.")

@@ -1,3 +1,5 @@
+import sys; sys.path.insert(0, ".")
+import sys; sys.path.insert(0, ".")
 import os, subprocess, sys
 
 def test_print_tree_outputs_file(tmp_path):

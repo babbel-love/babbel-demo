@@ -1,3 +1,5 @@
+import sys; sys.path.insert(0, ".")
+import sys; sys.path.insert(0, ".")
 import os, time, tempfile
 from thread import ConversationThread, SessionStore
 

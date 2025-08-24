@@ -1,3 +1,5 @@
+import sys; sys.path.insert(0, ".")
+import sys; sys.path.insert(0, ".")
 from thread import ConversationThread
 
 def test_pop_last_exchange_removes_pair():

@@ -1,3 +1,5 @@
+import sys; sys.path.insert(0, ".")
+import sys; sys.path.insert(0, ".")
 import os, tempfile, json
 from self_awareness import grep, find_symbols, describe_project
 

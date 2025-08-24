@@ -1,3 +1,5 @@
+import sys; sys.path.insert(0, ".")
+import sys; sys.path.insert(0, ".")
 from review import enforce_tone_and_style, summarize_flags
 
 def test_enforce_tone_and_style_removes_hedges_and_closes_sentence():

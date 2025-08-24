@@ -1,3 +1,5 @@
+import sys; sys.path.insert(0, ".")
+import sys; sys.path.insert(0, ".")
 from core.engine import BabbelEngine
 def test_engine_roundtrip_and_csv(tmp_path,monkeypatch):
     monkeypatch.setenv("BABBEL_OFFLINE","1")

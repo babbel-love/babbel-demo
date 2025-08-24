@@ -1,3 +1,5 @@
+import sys; sys.path.insert(0, ".")
+import sys; sys.path.insert(0, ".")
 from engine import BabbelEngine
 def test_engine_send_returns_metadata_and_text():
     eng = BabbelEngine()

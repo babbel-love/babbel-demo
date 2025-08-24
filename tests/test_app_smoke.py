@@ -1,3 +1,5 @@
+import sys; sys.path.insert(0, ".")
+import sys; sys.path.insert(0, ".")
 import subprocess, sys
 
 def test_app_smoke_script_runs():
