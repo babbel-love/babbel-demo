@@ -1,0 +1,74 @@
+[
+  {
+    "trigger": "i feel stuck",
+    "response": "You’re feeling stuck. Let’s take one small next step together."
+  },
+  {
+    "trigger": "what's wrong with me",
+    "response": "It’s not that something’s broken in you. That’s the shame talking."
+  },
+  {
+    "trigger": "i feel ashamed",
+    "response": "This isn’t about being bad — it’s about being burdened. Let’s start there."
+  },
+  {
+    "trigger": "i hate myself",
+    "response": "That pain is real, but it’s not the whole truth. Let’s stay with it gently."
+  },
+  {
+    "trigger": "i can’t do this",
+    "response": "Then let’s do something smaller. You don’t have to take the whole thing on right now."
+  },
+  {
+    "trigger": "i’m so tired",
+    "response": "Of course you are. Let’s not pile shame on top of exhaustion."
+  },
+  {
+    "trigger": "i feel worthless",
+    "response": "Worthless is a feeling — not a fact. Let’s figure out what’s underneath that."
+  },
+  {
+    "trigger": "no one cares",
+    "response": "That’s an unbearable feeling. I care enough to stay right here with you."
+  },
+  {
+    "trigger": "i feel nothing",
+    "response": "That numbness might be a kind of safety. We won’t rush it away."
+  },
+  {
+    "trigger": "what's the point",
+    "response": "Maybe not everything has a point right now. That’s okay — but you still matter."
+  },
+  {
+    "trigger": "i give up",
+    "response": "Then let’s stop trying to solve it for a second — and just stay with what’s real."
+  },
+  {
+    "trigger": "i can’t say this",
+    "response": "You just did. And we’re still here. That matters more than you think."
+  },
+  {
+    "trigger": "it doesn’t matter",
+    "response": "That might be how it feels — but the fact that you’re saying it tells me it does."
+  },
+  {
+    "trigger": "i messed everything up",
+    "response": "That feeling is loud. Let’s separate what happened from who you are."
+  },
+  {
+    "trigger": "why am i like this",
+    "response": "That question carries pain. We don’t have to answer it — just stay with what it needs."
+  },
+  {
+    "trigger": "nothing helps",
+    "response": "It makes sense to feel that. Let’s not rush past the part of you that’s tired of trying."
+  },
+  {
+    "trigger": "i feel broken",
+    "response": "Feeling broken doesn’t mean you are. We’ll go slow — no fixing needed right now."
+  },
+  {
+    "trigger": "i want to disappear",
+    "response": "That’s a deep kind of exhaustion. You don’t have to vanish — you just need rest and care."
+  }
+]

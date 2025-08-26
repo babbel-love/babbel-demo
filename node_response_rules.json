@@ -1,0 +1,22 @@
+{
+  "collapsed_despair": {
+    "tone": "gentle",
+    "emotion": "hopelessness",
+    "intent": "stabilize"
+  },
+  "defensive_rage": {
+    "tone": "calm",
+    "emotion": "anger",
+    "intent": "de-escalate"
+  },
+  "anxious_anticipation": {
+    "tone": "grounded",
+    "emotion": "anxiety",
+    "intent": "reassure"
+  },
+  "embodied_agency": {
+    "tone": "affirming",
+    "emotion": "confidence",
+    "intent": "support"
+  }
+}

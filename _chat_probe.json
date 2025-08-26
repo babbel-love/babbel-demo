@@ -1,0 +1,4 @@
+{"model":"openrouter/auto","messages":[
+  {"role":"system","content":"You are a ping probe."},
+  {"role":"user","content":"Reply exactly: Pong."}
+],"temperature":0}

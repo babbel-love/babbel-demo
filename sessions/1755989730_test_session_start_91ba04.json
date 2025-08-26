@@ -1,0 +1,22 @@
+{
+  "id": "1755989730_test_session_start_91ba04",
+  "model": "openrouter/auto",
+  "tone": "direct",
+  "messages": [
+    {
+      "role": "user",
+      "text": "Test session start",
+      "ts": 1755989730
+    },
+    {
+      "role": "assistant",
+      "text": "I can help. Here is a quick plan so you can proceed.",
+      "meta": {
+        "intent": "task",
+        "model": "openrouter/auto",
+        "tone": "direct"
+      },
+      "ts": 1755989730
+    }
+  ]
+}

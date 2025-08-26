@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "babbel_core"
+version = "0.1.0"
+description = "Babbel core intelligence (protocols, memory, tone, pipeline)"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["babbel_core*"]
+exclude = ["tests*"]

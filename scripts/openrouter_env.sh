@@ -1,0 +1,3 @@
+export OPENROUTER_API_KEY='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'
+export OPENROUTER_SITE_URL='http://localhost:8501'
+export OPENROUTER_APP_TITLE='Babbel Official Dev'

@@ -1,0 +1,14 @@
+....F..                                                                  [100%]
+=================================== FAILURES ===================================
+____________________________ test_pipeline_response ____________________________
+
+    def test_pipeline_response():
+        result = run_pipeline("I feel stuck.")
+>       assert "let’s take one small" in result.lower()
+E       AssertionError: assert 'let’s take one small' in 'final answer: i feel stuck.\n\nquick check:\n- style: babbel voice enforced\n- fact flags: none\n- tone: direct, conc...babbel voice: concise, direct, specific. remove hedges and weak phrasing.\n[fact-check] no factual red flags detected.'
+E        +  where 'final answer: i feel stuck.\n\nquick check:\n- style: babbel voice enforced\n- fact flags: none\n- tone: direct, conc...babbel voice: concise, direct, specific. remove hedges and weak phrasing.\n[fact-check] no factual red flags detected.' = <built-in method lower of str object at 0x1280b9a20>()
+E        +    where <built-in method lower of str object at 0x1280b9a20> = 'Final Answer: I feel stuck.\n\nQuick check:\n- Style: Babbel voice enforced\n- Fact flags: none\n- Tone: direct, conc...Babbel voice: concise, direct, specific. Remove hedges and weak phrasing.\n[Fact-check] No factual red flags detected.'.lower
+
+babbel_core/tests/test_pipeline.py:5: AssertionError
+=========================== short test summary info ============================
+FAILED babbel_core/tests/test_pipeline.py::test_pipeline_response - Assertion...

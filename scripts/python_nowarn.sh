@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+unset PYTHONWARNINGS PYTHONPATH PYTHONOPTIMIZE PYTHONASYNCIODEBUG PYTHONMALLOC
+exec python -E "$@"

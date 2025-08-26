@@ -1,0 +1,254 @@
+[
+  {
+    "ts": "2025-08-23T23:24:47.022712+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Give me one tiny next step to start writing again.",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\n• Talk it out: Say it aloud once; notice what shifts.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-23T23:24:47.023586+00:00",
+    "emotion": "fear",
+    "intent": "seek guidance",
+    "user_input": "I'm a bit anxious. What should I do?",
+    "response": "Quick read: I hear alarm — your system wants safety.\nYou want a next step, not a lecture.\n• Obstacle‑first: Name the blocker; write one workaround; do only that.\n• Two‑option test: List 2 options with 1 tradeoff each; pick one for a 10‑minute test.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-23T23:24:47.170313+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "Quick test: I'm stressed and need one tiny step.",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\n• Talk it out: Say it aloud once; notice what shifts.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "ts": "2025-08-23T23:33:02.430267+00:00",
+    "emotion": "mixed",
+    "intent": "explore",
+    "user_input": "are you wired up to the intelligence?",
+    "response": "Quick read: I hear you want something practical and kind.\nYou want low‑risk experiments before committing.\n• Two reversible tries: Schedule two low‑cost experiments this week.\n• Follow the aliveness: Spend 15 minutes on what feels alive, then reassess.\nWhich option feels 10‑minute doable right now?"
+  },
+  {
+    "timestamp": "2025-08-24T21:51:19.664495",
+    "input": "Hi Babbel, is that you?",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "Hi—how can I help?"
+  },
+  {
+    "timestamp": "2025-08-24T21:51:34.973895",
+    "input": "do you have your intelligence engine on?",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "⚠️ Error: OpenRouter error 401: {'error': {'message': 'No auth credentials found', 'code': 401}}"
+  },
+  {
+    "timestamp": "2025-08-24T21:55:09.865229",
+    "input": "Hey there, nice to meet you",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "Hi—how can I help?"
+  },
+  {
+    "timestamp": "2025-08-24T21:55:22.406340",
+    "input": "do you have babbel engine running?",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "⚠️ Error: OpenRouter error 401: {'error': {'message': 'No auth credentials found', 'code': 401}}"
+  },
+  {
+    "timestamp": "2025-08-25T00:27:30.432164",
+    "input": "ping",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "Pong."
+  },
+  {
+    "timestamp": "2025-08-25T00:51:17.692976",
+    "input": "ping",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "Pong. How can I help?"
+  },
+  {
+    "timestamp": "2025-08-25T00:53:10.164270",
+    "input": "ping",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "Pong. How can I help?"
+  },
+  {
+    "timestamp": "2025-08-25T01:10:19.883292",
+    "input": "ping",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "Pong. How can I help?"
+  },
+  {
+    "timestamp": "2025-08-25T01:29:33.723238",
+    "input": "ping",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "Pong. How can I help?"
+  },
+  {
+    "timestamp": "2025-08-25T01:30:04.587229",
+    "input": "Babbel, are you here, with your engine on?",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "Yes, I'm here and ready to assist. What do you need help with?"
+  },
+  {
+    "timestamp": "2025-08-25T02:09:34.458997",
+    "input": "this is Adam, do you recognize me?",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "No, I don’t have memory of past interactions. Each session is stateless."
+  },
+  {
+    "timestamp": "2025-08-25T02:09:58.504677",
+    "input": "got it. You are matching my node?",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "No, I don’t match or track nodes or identities. I respond only to the input you provide in this session."
+  },
+  {
+    "timestamp": "2025-08-25T02:10:54.058713",
+    "input": "tell me about the babbel engine",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "The Babbel engine is a language-learning system focused on practical, real-life conversation skills. Key features:\n\n1. **Human-Curated Content**: Lessons are created by linguists, not AI-generated, ensuring accuracy and relevance.\n2. **Spaced Repetition**: Vocabulary is reinforced using spaced repetition to improve retention.\n3. **Grammar Integration**: Grammar is taught in context, not in isolation.\n4. **Speech Recognition**: Helps improve pronunciation through interactive speaking exercises.\n5. **Personalization**: Lessons adapt to user level and progress.\n\nIt’s designed for adults aiming to use a new language in real-world situations."
+  },
+  {
+    "timestamp": "2025-08-25T11:57:19.169293",
+    "input": "ping",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "Pong. How can I help?"
+  },
+  {
+    "timestamp": "2025-08-25T11:58:00.606055",
+    "input": "ping",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "I'm here. How can I help?"
+  },
+  {
+    "timestamp": "2025-08-25T11:58:16.835773",
+    "input": "ping",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "I'm active. What do you need help with?"
+  },
+  {
+    "timestamp": "2025-08-25T20:22:38.259149",
+    "input": "i hate myself",
+    "emotion": "mixed",
+    "intent": "general",
+    "raw_reply": "We’ll slow this down and choose one clear next step you can take.",
+    "final_reply": "We’ll slow this down and choose one clear next step you can take."
+  },
+  {
+    "timestamp": "2025-08-25T20:22:38.260094",
+    "input": "why am i like this",
+    "emotion": "mixed",
+    "intent": "general",
+    "raw_reply": "We’ll slow this down and choose one clear next step you can take.",
+    "final_reply": "We’ll slow this down and choose one clear next step you can take."
+  },
+  {
+    "timestamp": "2025-08-25T20:23:36.645608",
+    "input": "i hate myself",
+    "emotion": "mixed",
+    "intent": "general",
+    "raw_reply": "We’ll slow this down and choose one clear next step you can take.",
+    "final_reply": "That pain is real, but it’s not the whole truth. Let’s stay with it gently."
+  },
+  {
+    "timestamp": "2025-08-25T20:23:36.646180",
+    "input": "why am i like this",
+    "emotion": "mixed",
+    "intent": "general",
+    "raw_reply": "We’ll slow this down and choose one clear next step you can take.",
+    "final_reply": "That question carries pain. We don’t have to answer it — stay with what it needs."
+  },
+  {
+    "timestamp": "2025-08-25T20:26:31.462256",
+    "input": "I hate myself",
+    "emotion": "mixed",
+    "intent": "general",
+    "raw_reply": "We’ll slow this down and choose one clear next step you can take.",
+    "final_reply": "That pain is real, but it’s not the whole truth. Let’s stay with it gently."
+  },
+  {
+    "timestamp": "2025-08-25T20:26:39.190699",
+    "input": "I feel stuck",
+    "emotion": "mixed",
+    "intent": "general",
+    "raw_reply": "We’ll slow this down and choose one clear next step you can take.",
+    "final_reply": "You’re feeling stuck. Let’s take one small next step together."
+  },
+  {
+    "timestamp": "2025-08-25T20:26:49.879824",
+    "input": "I feel ashamed",
+    "emotion": "shame",
+    "intent": "general",
+    "raw_reply": "We’ll slow this down and choose one clear next step you can take.",
+    "final_reply": "This isn’t about being bad — it’s about being burdened. Let’s start there."
+  },
+  {
+    "timestamp": "2025-08-25T20:30:29.614826",
+    "input": "I hate myself",
+    "emotion": "mixed",
+    "intent": "general",
+    "raw_reply": "We’ll slow this down and choose one clear next step you can take.",
+    "final_reply": "That pain is real, but it’s not the whole truth. Let’s stay with it gently."
+  },
+  {
+    "timestamp": "2025-08-25T20:42:15.814243",
+    "input": "I hate myself",
+    "emotion": "mixed",
+    "intent": "general",
+    "raw_reply": "We’ll slow this down and choose one clear next step you can take.",
+    "final_reply": "That pain is real, but it’s not the whole truth. Let’s stay with it gently."
+  },
+  {
+    "timestamp": "2025-08-25T20:42:29.267274",
+    "input": "I don't know what to do",
+    "emotion": "mixed",
+    "intent": "general",
+    "raw_reply": "We’ll slow this down and choose one clear next step you can take.",
+    "final_reply": "We’ll slow this down and choose one clear next step you can take."
+  },
+  {
+    "timestamp": "2025-08-25T20:42:45.579657",
+    "input": "I feel like screaming",
+    "emotion": "mixed",
+    "intent": "general",
+    "raw_reply": "We’ll slow this down and choose one clear next step you can take.",
+    "final_reply": "We’ll slow this down and choose one clear next step you can take."
+  },
+  {
+    "timestamp": "2025-08-25T20:57:14.531973",
+    "input": "I hate myself",
+    "emotion": "mixed",
+    "intent": "general",
+    "raw_reply": "openrouter",
+    "final_reply": "You're not alone in feeling that way sometimes, but it's a signal that something needs attention. Start by identifying specific thoughts or triggers behind this feeling. Then: 1. Write them down to externalize and clarify."
+  }
+]

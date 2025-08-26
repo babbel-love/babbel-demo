@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2025-08-25T14:31:03.728346",
+    "input": "ping",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "⚠️ Error: OpenRouter error 401: {\"error\":{\"message\":\"No auth credentials found\",\"code\":401}}"
+  },
+  {
+    "timestamp": "2025-08-25T14:35:18.877096",
+    "input": "ping",
+    "emotion": "n/a",
+    "intent": "n/a",
+    "raw_reply": "openrouter",
+    "final_reply": "Pong. How can I help?"
+  }
+]

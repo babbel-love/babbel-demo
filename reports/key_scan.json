@@ -1,0 +1,1216 @@
+{
+  "base": "/Users/adamhauser/Babbel_Official",
+  "results": [
+    {
+      "file": "emotion_classifier.py",
+      "size": 902,
+      "sha1": "dc821bcb6c5a5ad35d54bf7633c8de54d1a7537c",
+      "hits": [
+        {
+          "line": 0,
+          "tags": [
+            "null_bytes"
+          ],
+          "snippet": "binary or null byte content"
+        }
+      ],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "thread.py",
+      "size": 7233,
+      "sha1": "48baac623bd9b07cbdffeb3ee0a800df8bd5f7c5",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "node_response_rules.json",
+      "size": 425,
+      "sha1": "71976058cd6e8ca07ddf9572ae7a9246594fca9f",
+      "hits": [],
+      "json_valid": true,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "speech_protocols.json",
+      "size": 190,
+      "sha1": "623a083247a1cb7070522bb22776dc49b8d36bb9",
+      "hits": [],
+      "json_valid": true,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "pytest.ini",
+      "size": 40,
+      "sha1": "e15583fa18dfa4cae79207238ac157789a49c44f",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "requirements.txt",
+      "size": 135,
+      "sha1": "c93dfada2d5b002fe0c22a23d267e4f4321b8f75",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "node_rewrite_v2.py",
+      "size": 406,
+      "sha1": "a1b2cdb4bac1e4f817e182ce100835dd274406a4",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Makefile",
+      "size": 240,
+      "sha1": "404bf62e9b72771e2d8aa76245f32b37c1e1d0a4",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "streamlit_babbel_app.py",
+      "size": 14494,
+      "sha1": "d3f29cae9ff885f68368bbc59323e1a4ab8c0edd",
+      "hits": [
+        {
+          "line": 10,
+          "tags": [
+            "hardcoded_key_token"
+          ],
+          "snippet": "HARD_CODED_API_KEY = os.getenv(\"OPENROUTER_API_KEY\",\"\")"
+        },
+        {
+          "line": 67,
+          "tags": [
+            "hardcoded_key_token"
+          ],
+          "snippet": "if not HARD_CODED_API_KEY:"
+        },
+        {
+          "line": 70,
+          "tags": [
+            "hardcoded_key_token"
+          ],
+          "snippet": "\"Authorization\": f\"Bearer {HARD_CODED_API_KEY}\","
+        },
+        {
+          "line": 0,
+          "tags": [
+            "python_syntax_error"
+          ],
+          "snippet": "invalid syntax at 102:50"
+        }
+      ],
+      "json_valid": null,
+      "python_syntax_ok": false
+    },
+    {
+      "file": "self_awareness.py",
+      "size": 3235,
+      "sha1": "260d9ad1e1df8cc238d1778c8bb69b31a4512a1f",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "memory_tracker.py",
+      "size": 1143,
+      "sha1": "24acd060f563b86de29be11b7a361ec49cc49e66",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "intent_classifier.py",
+      "size": 942,
+      "sha1": "9eb47293c781e32e8fc6ec18fbd006f69b54c78b",
+      "hits": [
+        {
+          "line": 0,
+          "tags": [
+            "null_bytes"
+          ],
+          "snippet": "binary or null byte content"
+        }
+      ],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "review.py",
+      "size": 459,
+      "sha1": "c93b74ccd97f17a99803bf02396795298c09f32b",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tone_constants.py",
+      "size": 203,
+      "sha1": "db5e92daa0d8d3750b322269e09256d6e4752ee6",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "engine.py",
+      "size": 2406,
+      "sha1": "daba6344ff19e1b868738038ab63ddb57087197b",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": ".gitignore",
+      "size": 116,
+      "sha1": "8608ff5a3b7733c575bd91b2b7eb63b64be274b1",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "utils.py",
+      "size": 648,
+      "sha1": "c029bdf2ead7ab1f311f60ef37aeefbb447d37e0",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "run_app.sh",
+      "size": 117,
+      "sha1": "e7ec707abde63f9e01a18251104ab203dafacaac",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "run_tests.sh",
+      "size": 48,
+      "sha1": "4c849ccfd4b03938e75ccb3737d458a300f35c7a",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "pipeline.py",
+      "size": 306,
+      "sha1": "cdc3c91ef74906ba17d8b17d0bc85419511b6997",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "orchestrator.py",
+      "size": 2282,
+      "sha1": "c61b3d935b3ee2beb45fccc19bf15ba1dd416f56",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "settings.py",
+      "size": 873,
+      "sha1": "348a6a300dc3221e20167b7a51dfb3d7e78844b8",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "node_rules.py",
+      "size": 933,
+      "sha1": "62d1253b69fc0c77652fedda207438cf0b4f99d7",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "rewrite.py",
+      "size": 445,
+      "sha1": "0fcda9267c198aabdbb2f0aa015dd1eb92854ec1",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "schema_validation.py",
+      "size": 838,
+      "sha1": "03eb6fd8f7955ebe004e36f89de3ab90e8cb1833",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "cultural_shift.py",
+      "size": 1509,
+      "sha1": "cc6f6843e09ae768fdcf00ac37a6df21a645bb5e",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/constraints.txt",
+      "size": 18,
+      "sha1": "e17bcdb3aef098951ce45fb0003dd8b8f5b8d626",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/emotion_classifier.py",
+      "size": 449,
+      "sha1": "af66fed3048e83f11d2d506b6c29afed6906a945",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/thread.py",
+      "size": 2216,
+      "sha1": "3cbbf36d1763a6d2a084866ae3f24fdf85bfff48",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/node_response_rules.json",
+      "size": 423,
+      "sha1": "2018d1459dab438a542498d62824c6610dbfddae",
+      "hits": [],
+      "json_valid": true,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/speech_protocols.json",
+      "size": 191,
+      "sha1": "d94ea0e1029985597472d1090d2b8c7c606c424d",
+      "hits": [],
+      "json_valid": true,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/babbel_core.py",
+      "size": 324,
+      "sha1": "85cf3af33ece50d70468a6449c559ebce779a1a4",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/node_rewrite_v2.py",
+      "size": 534,
+      "sha1": "5d2789d317a501a0e43764ff9ef12a5c9d9757eb",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/BRANCH_PROTECTION.txt",
+      "size": 90,
+      "sha1": "288cc1f95f403a4676c75090c40f4fac74f10edd",
+      "hits": [
+        {
+          "line": 1,
+          "tags": [
+            "banned_terms"
+          ],
+          "snippet": "Do not commit changes that reintroduce GPT fallback logic or remove protocol enforcement."
+        }
+      ],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/Makefile",
+      "size": 77,
+      "sha1": "d54aabfc22623c7cb2c5940416a8363ca7d2fa85",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/streamlit_babbel_app.py",
+      "size": 5011,
+      "sha1": "1520b053821d0e5073f960be5f74461d23984d61",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/memory_tracker.py",
+      "size": 1006,
+      "sha1": "d1cd27ba4ec3b5ee955187f81da7bcf39bc78b9c",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/intent_classifier.py",
+      "size": 465,
+      "sha1": "54fc346f1742fbce18bba19b83ad9cdca48429fe",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/review.py",
+      "size": 306,
+      "sha1": "c4abf36573caea040a76eab2e4c8fb2d8fa00cf3",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/test_pipeline_run.py",
+      "size": 342,
+      "sha1": "7485fbc5cad960746be48272e4408a20591626bb",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/project_structure.txt",
+      "size": 741,
+      "sha1": "e2327803203763706779a5ae044662d4d2f775f0",
+      "hits": [
+        {
+          "line": 14,
+          "tags": [
+            "ellipsis_literal"
+          ],
+          "snippet": "\u2502   \u2514\u2500\u2500 ..."
+        }
+      ],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/README.md",
+      "size": 157,
+      "sha1": "081ea9eda0141e3973b55a13b684e00d0771f573",
+      "hits": [
+        {
+          "line": 2,
+          "tags": [
+            "banned_terms"
+          ],
+          "snippet": "Fully local, deterministic conversation engine with tone, emotion, and protocol enforcement. No GPT fallback. No external APIs."
+        }
+      ],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/tone_constants.py",
+      "size": 187,
+      "sha1": "987c19fc7dcb557ace18a6b04b22a53cdf073d0e",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/utils.py",
+      "size": 287,
+      "sha1": "e1e4f4ea3c11d7d8d054d43a24342e339b7ebeb1",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/run_tests.sh",
+      "size": 40,
+      "sha1": "b8a23207ad763266063dc5858c9c904ee0bb83fc",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/pipeline.py",
+      "size": 1906,
+      "sha1": "523af9a7c4f0cb2949c0e9474f21236db0d69a4c",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/node_rules.py",
+      "size": 976,
+      "sha1": "5f0d223894e6ab332c9dbaa9745423f662565e5f",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/rewrite.py",
+      "size": 850,
+      "sha1": "ce8e4eaa51bb5831cac6298f0d12e223df6b3bed",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/schema_validation.py",
+      "size": 241,
+      "sha1": "db8304ca0cf1030f6a62864caaf206b175d65ed4",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/cultural_shift_detector.py",
+      "size": 285,
+      "sha1": "ecee1c08b32e41cc8f70bcdd1d22f17b7300c555",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/memory_anchor.py",
+      "size": 197,
+      "sha1": "7c610a67db4ff193a7d802f3edb4c8a92e8e4407",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/protocol_guard.py",
+      "size": 172,
+      "sha1": "388c1078578080a6c2ad1967fcfe811035cac97e",
+      "hits": [
+        {
+          "line": 3,
+          "tags": [
+            "banned_terms"
+          ],
+          "snippet": "if \"chatgpt\" in msg[\"content\"].lower():"
+        },
+        {
+          "line": 4,
+          "tags": [
+            "banned_terms"
+          ],
+          "snippet": "raise ValueError(\"GPT-style phrasing detected.\")"
+        }
+      ],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/engine_patch.py",
+      "size": 114,
+      "sha1": "018310c482cac71eaa869802c588dd93c3370359",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/config.py",
+      "size": 256,
+      "sha1": "484aa6190350e5bfb78bbeed3d3fa143cd9a92e0",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/session_state.py",
+      "size": 624,
+      "sha1": "635e0d6d3081301d4b1aa4fe2770b897401cafc5",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/protocol_retry.py",
+      "size": 230,
+      "sha1": "53634c231ab51686e6d8538ea6da7b08d97d08f7",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/prompt_builder.py",
+      "size": 140,
+      "sha1": "b8d388d83b7503a581949d8ca4323ba1215ddf03",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/engine_memory.py",
+      "size": 489,
+      "sha1": "903d6495c715cdab975f4ce58a12a230993996a8",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/test_run.py",
+      "size": 461,
+      "sha1": "f71610264b2ef33af4e734c3958ebdf85177358e",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/scoring.py",
+      "size": 206,
+      "sha1": "af0f845949f09c6d105736c19c0cc85ed2d2efe3",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/culture_shift.py",
+      "size": 430,
+      "sha1": "c243b97f4f6a37c1e781259ee8f3934787e51581",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/protocol_engine.py",
+      "size": 338,
+      "sha1": "2b3a3f31794123e757d08caed3ac8ccc6dd130fd",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/__init__.py",
+      "size": 34,
+      "sha1": "b718a1e5bb576e36c2cb9619f71fe25c06e87d47",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/engine.py",
+      "size": 1018,
+      "sha1": "833278ec7c094d7eaf549df00a6b4c476352a576",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/orchestrator.py",
+      "size": 481,
+      "sha1": "b1883f5a9b224e731d6e0be4dab33e212611cd14",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/identity_lock.py",
+      "size": 331,
+      "sha1": "31763513d34a589e6bad3802f6ced9d7be21fdb7",
+      "hits": [
+        {
+          "line": 2,
+          "tags": [
+            "banned_terms"
+          ],
+          "snippet": "return not any(x in message.lower() for x in [\"chatgpt\", \"openai\", \"gpt-4\"])"
+        }
+      ],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/tone_classifier.py",
+      "size": 424,
+      "sha1": "ec60355cd1378645f6e75c628b3551adfc1ad46c",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/node_classifier.py",
+      "size": 411,
+      "sha1": "9df6ea010559f83f2566a045f100dec58c2ea1be",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/conversations.py",
+      "size": 177,
+      "sha1": "30214de34b518d6c357e37c92ad88fedbe91a019",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/session_controller.py",
+      "size": 676,
+      "sha1": "b1c3b7c9ae7fb212ab9c35d117fa4d12c990501e",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "Babbel_Streamlit_Complete/core/schema.py",
+      "size": 307,
+      "sha1": "750f61b45192a2342bdea7b851cf509638288856",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/cultural_shift_detector.py",
+      "size": 360,
+      "sha1": "2e87d1cf07c56442c1a5d492ba02726a1ec212de",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/memory_anchor.py",
+      "size": 390,
+      "sha1": "80a86b53f54c80cbe7ddcd8f2616303617b418cc",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/protocol_guard.py",
+      "size": 172,
+      "sha1": "388c1078578080a6c2ad1967fcfe811035cac97e",
+      "hits": [
+        {
+          "line": 3,
+          "tags": [
+            "banned_terms"
+          ],
+          "snippet": "if \"chatgpt\" in msg[\"content\"].lower():"
+        },
+        {
+          "line": 4,
+          "tags": [
+            "banned_terms"
+          ],
+          "snippet": "raise ValueError(\"GPT-style phrasing detected.\")"
+        }
+      ],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/engine_patch.py",
+      "size": 601,
+      "sha1": "09f39071a9fe8d63067db85149828faa0fc41bb9",
+      "hits": [
+        {
+          "line": 0,
+          "tags": [
+            "python_syntax_error"
+          ],
+          "snippet": "unterminated string literal (detected at line 4) at 4:19"
+        }
+      ],
+      "json_valid": null,
+      "python_syntax_ok": false
+    },
+    {
+      "file": "core/emotion_classifier.py",
+      "size": 449,
+      "sha1": "af66fed3048e83f11d2d506b6c29afed6906a945",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/hx_engine.py",
+      "size": 577,
+      "sha1": "ca2c1942249a1e798812b53e40d3afa296b654a9",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/memory_manager.py",
+      "size": 226,
+      "sha1": "e3796b940bf0c953e02a3e4d9dcab8b0c0712a0f",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/config.py",
+      "size": 242,
+      "sha1": "7942d77dca2dcb9fe3004981c796447c3daf3171",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/session_state.py",
+      "size": 1114,
+      "sha1": "7fec40253e9de8998f705a5ab439bbcb4b9c3d13",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/protocol_retry.py",
+      "size": 1347,
+      "sha1": "3d90fd2dedaa3a0b7dd1cd5a977d620b6f2ce4ab",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/prompt_builder.py",
+      "size": 195,
+      "sha1": "656c78c7be762f2f2776346afc05ec3e0824e9e3",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/engine_memory.py",
+      "size": 1031,
+      "sha1": "1da2281b488bfd8151e25916f49ee28036aac06f",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/test_run.py",
+      "size": 643,
+      "sha1": "8a757f3a00af41a76e3479683fc7022d3d97f874",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/scoring.py",
+      "size": 323,
+      "sha1": "3af1344de35369574b36b37e4daede010b84e937",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/culture_shift.py",
+      "size": 718,
+      "sha1": "00894b188be1ade86416e8bbaef343e5836ddc13",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/protocol_engine.py",
+      "size": 652,
+      "sha1": "999654e1b22ed3615c8ab853808c4a08dc311f70",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/__init__.py",
+      "size": 55,
+      "sha1": "27e99d5f19e28dc2858e42e61e61f82097ecae3e",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/intent_classifier.py",
+      "size": 465,
+      "sha1": "54fc346f1742fbce18bba19b83ad9cdca48429fe",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/tone_constants.py",
+      "size": 570,
+      "sha1": "d9ae3da80602ff2de5e3e3dc275001d8b17df45f",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/prompt_guard.py",
+      "size": 662,
+      "sha1": "885070ae3715ccefcefa439f11d4c464cc457429",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/engine.py",
+      "size": 1018,
+      "sha1": "833278ec7c094d7eaf549df00a6b4c476352a576",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/orchestrator.py",
+      "size": 1079,
+      "sha1": "8d6d8d927d2ad6694cb6c2b33064ac9554d09a05",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/identity_lock.py",
+      "size": 722,
+      "sha1": "a43cc31abd489335b721349123688b222d99dc36",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/tone_classifier.py",
+      "size": 300,
+      "sha1": "b5b25bdbb2371a9d2333bb130e6adcdceca15af3",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/model_interface.py",
+      "size": 117,
+      "sha1": "778996ff88f13fd69eed79acf7c9d6fbff2d15e0",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/node_classifier.py",
+      "size": 325,
+      "sha1": "7d407606b5dae957a3dc00d875b554c33795569f",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/conversations.py",
+      "size": 6534,
+      "sha1": "4f621dcc26f892fb434c742b81b534b25bdfe6a0",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/session_controller.py",
+      "size": 423,
+      "sha1": "697846952461170a18cbd6fba33abd4c122f1176",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "core/schema.py",
+      "size": 1659,
+      "sha1": "ec78a8155c2a9ac413cd3b439ceb33574074b112",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_utils.py",
+      "size": 458,
+      "sha1": "2ba19d4de0c42816aac6b9f76864c809dfbbf9b5",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_session_cli.py",
+      "size": 1656,
+      "sha1": "c04d05d07eb6309f21c47bcc578468a56dea9037",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_cultural_shift.py",
+      "size": 726,
+      "sha1": "7f54f14899de47d9190656839c04ad93d0e7f98b",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_thread_persistence.py",
+      "size": 1019,
+      "sha1": "56e8cf4e547df0acbcb0ce4c82f1811606d0215c",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_pop_last_exchange.py",
+      "size": 537,
+      "sha1": "b877974615ecec454c818f202d619ec44d1390fc",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_print_tree.py",
+      "size": 419,
+      "sha1": "ab8989fbe1c14a502cdc70b3e0a8cfd882cdb119",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_session_search.py",
+      "size": 622,
+      "sha1": "6967b96fa0f30775c050bbd93d6a89c678e1f802",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_backup_restore_scripts.py",
+      "size": 1348,
+      "sha1": "57c0e1d22d9748fffa874a2ae0e0794b977cb3d2",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_engine_basic.py",
+      "size": 482,
+      "sha1": "41e6fac42e5627ae6179b3156d3ca857fbf86c02",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_pipeline_smoke.py",
+      "size": 180,
+      "sha1": "1a84fec542dac30bdc781d8c8954dfe478afa28b",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_session_metadata.py",
+      "size": 1183,
+      "sha1": "587c9a3903d43cccfe709cc087a27bd02393ba8d",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_app_smoke.py",
+      "size": 258,
+      "sha1": "1e619b84ddf0094c9e6ac296e53d50e3207d83fe",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_schema_validation.py",
+      "size": 424,
+      "sha1": "248d6db87bae63af945068ae9fecc3d859d99311",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_pipeline_smoke_extra.py",
+      "size": 212,
+      "sha1": "7500fffcf58d1eca002e44a37c8d1d5b045ead51",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_orchestrator.py",
+      "size": 640,
+      "sha1": "adba9c1aea982d4ff22df2e8f85df15a56d407ef",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_export_script.py",
+      "size": 1327,
+      "sha1": "221d4d81a0f98eafc6ceb6d166af960f2285c56b",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_memory_tracker.py",
+      "size": 918,
+      "sha1": "79fedf754a62d360c932b1e182181605f2fd7729",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_self_awareness.py",
+      "size": 819,
+      "sha1": "1b22f12d9c20d7252c4300dbf18e292c1bdeee82",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_scanners.py",
+      "size": 1101,
+      "sha1": "ffbe00e2072e0cbf1c002b21ae5a1f20364d7362",
+      "hits": [
+        {
+          "line": 6,
+          "tags": [
+            "banned_terms"
+          ],
+          "snippet": "p=tmp_path/\"bad.txt\"; p.write_text(\"this has gpt\",encoding=\"utf-8\")"
+        }
+      ],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_thread_index_ops.py",
+      "size": 1050,
+      "sha1": "10920eece82d12f02c03de99dc6f9792d3c1000e",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_settings.py",
+      "size": 822,
+      "sha1": "84586f07c9b4b332a76940087c9045b2da8bd85f",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "tests/test_review.py",
+      "size": 464,
+      "sha1": "8710b281e78cddc5ec8fa7e0908361f01e8862d5",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "scripts/backup_sessions.py",
+      "size": 487,
+      "sha1": "678df4be4b4c2fdd3d089b4d64252a5fbcfe2263",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "scripts/install.sh",
+      "size": 141,
+      "sha1": "0bba5af27b65aeebca83572680659d18e266ada3",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "scripts/run_all.sh",
+      "size": 122,
+      "sha1": "4eefcf75e00b240736de225164dda7d645090d1e",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "scripts/session_cli.py",
+      "size": 2795,
+      "sha1": "afe792c55d1556b9e241ec88b27e85a7f7fea0fb",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "scripts/export_all.py",
+      "size": 961,
+      "sha1": "8b0c53f4d1bf45a495de43dd5488ccf866052cc0",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "scripts/search_repo.py",
+      "size": 574,
+      "sha1": "0f7805c794e4c301726f33e52ce876d666cf5375",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "scripts/restore_sessions.py",
+      "size": 319,
+      "sha1": "8fd4bb8ceba66799361d88a89986d5f5d60506cf",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "scripts/print_tree.py",
+      "size": 1055,
+      "sha1": "6297c5d16507ef10a0f63b60e5ea7ea66c4dcd45",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "scripts/seed_sessions.py",
+      "size": 789,
+      "sha1": "08ca1e8d59f6e770cd04ec810187acd95d045cb3",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "scripts/health_check.py",
+      "size": 995,
+      "sha1": "8a75a6135269fc0ae263fbbd51524e05ae5cfb69",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "scripts/quick_start.sh",
+      "size": 256,
+      "sha1": "5b4fa54e363e51906e0b726f233a0ecdd4953049",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": null
+    },
+    {
+      "file": "scripts/app_smoke.py",
+      "size": 563,
+      "sha1": "22c04c27591a9988bf3af764403f4903a6f618e4",
+      "hits": [],
+      "json_valid": null,
+      "python_syntax_ok": true
+    },
+    {
+      "file": "reports/key_scan.json",
+      "size": 0,
+      "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "hits": [
+        {
+          "line": 1,
+          "tags": [
+            "json_parse_error"
+          ],
+          "snippet": "Expecting value: line 1 column 1 (char 0)"
+        }
+      ],
+      "json_valid": false,
+      "python_syntax_ok": null
+    }
+  ]
+}

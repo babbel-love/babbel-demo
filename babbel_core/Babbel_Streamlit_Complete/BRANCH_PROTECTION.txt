@@ -1,0 +1,1 @@
+Do not commit changes that reintroduce GPT fallback logic or remove protocol enforcement.

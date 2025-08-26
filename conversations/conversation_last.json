@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "ping",
+      "timestamp": "2025-08-25 11:57:57"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm here. How can I help?",
+      "timestamp": "2025-08-25 11:58:00"
+    },
+    {
+      "role": "user",
+      "content": "ping",
+      "timestamp": "2025-08-25 11:58:14"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm active. What do you need help with?",
+      "timestamp": "2025-08-25 11:58:16"
+    }
+  ]
+}
